@@ -32,7 +32,7 @@ set ruler
 set t_Co=256
 set laststatus=2
 set statusline=%F\ \%{fugitive#statusline()}\ \%=\ \%y\ -\ %l/%L
-call neobundle#begin(expand('/home/genar/.vim/bundle'))
+call neobundle#begin(expand('~/.vim/bundle'))
 
 " Neobundle magic
 NeoBundleFetch 'Shougo/neobundle.vim'
@@ -220,7 +220,7 @@ endif
 " tell it to use an undo file
 set undofile
 " set a directory to store the undo history
-set undodir=/home/genar/.vimundo/
+set undodir=~/.vimundo/
 
 autocmd FileType php setlocal omnifunc=phpcomplete_extended#CompletePHP
 
