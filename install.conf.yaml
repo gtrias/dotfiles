@@ -8,3 +8,7 @@
     ~/.vimrc: vim/vimrc
     ~/.oh-my-zsh: zsh/oh-my-zsh/
     ~/.zshrc: zsh/zshrc
+    ~/.vim/bundle/neobundle.vim:
+        force: true
+        create: true
+        path: vim/neobundle.vim
