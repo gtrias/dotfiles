@@ -10,3 +10,6 @@
 [submodule "vim/neobundle.vim"]
 	path = vim/neobundle.vim
 	url = https://github.com/Shougo/neobundle.vim
+[submodule "scripts/compile-vim-with-lua.sh"]
+	path = scripts/compile-vim-with-lua.sh
+	url = https://gist.github.com/7a093da7c81cb216a14a.git

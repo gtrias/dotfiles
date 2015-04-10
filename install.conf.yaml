@@ -4,6 +4,7 @@
     - [git submodule update --init --recursive, Installing submodules]
     - [exec fonts/fonts/install.sh, Installing Powerline Fonts]
     - [mkdir -p ~/.vimundo, Creating persistent undo folder]
+    #- [exec scripts/compile-vim-with-lua.sh/vim74_lua]
 
 - link: 
     ~/.vimrc: vim/vimrc
