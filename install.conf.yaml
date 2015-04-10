@@ -2,7 +2,8 @@
 
 - shell: 
     - [git submodule update --init --recursive, Installing submodules]
-    - [exec fonts/fonts/install.sh]
+    - [exec fonts/fonts/install.sh, Installing Powerline Fonts]
+    - [mkdir -p ~/.vimundo, Creating persistent undo folder]
 
 - link: 
     ~/.vimrc: vim/vimrc
