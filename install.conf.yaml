@@ -7,6 +7,8 @@
     #- [exec scripts/compile-vim-with-lua.sh/vim74_lua]
 
 - link: 
+    ~/.ssh : ssh/
+    ~/.gitconfig : git/gitconfig
     ~/.vimrc: vim/vimrc
     ~/.oh-my-zsh: zsh/oh-my-zsh/
     ~/.zshrc: zsh/zshrc
@@ -14,3 +16,7 @@
         force: true
         create: true
         path: vim/neobundle.vim
+    ~/bin:
+        force: true
+        create: true
+        path: bin/

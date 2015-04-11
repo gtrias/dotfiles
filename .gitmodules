@@ -13,3 +13,6 @@
 [submodule "scripts/compile-vim-with-lua.sh"]
 	path = scripts/compile-vim-with-lua.sh
 	url = https://gist.github.com/7a093da7c81cb216a14a.git
+[submodule "ssh"]
+	path = ssh
+	url = git@gitlab.acs.li:gtrias/sshconf.git

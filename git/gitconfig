@@ -1,0 +1,10 @@
+[user]
+	name = Genar Trias Ortiz
+	email = genar@acs.li
+[merge]
+	tool = diffconflicts
+[mergetool "diffconflicts"]
+	cmd = diffconflicts vim $BASE $LOCAL $REMOTE $MERGED
+	trustExitCode = true
+[mergetool]
+	keepBackup = false
