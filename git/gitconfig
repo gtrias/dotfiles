@@ -8,3 +8,5 @@
 	trustExitCode = true
 [mergetool]
 	keepBackup = false
+[push]
+	default = simple
