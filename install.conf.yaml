@@ -9,6 +9,7 @@
 - link: 
     ~/.ssh : ssh/
     ~/.gitconfig : git/gitconfig
+    ~/.gitignore_global: git/gitignore_global
     ~/.vimrc: vim/vimrc
     ~/.oh-my-zsh: zsh/oh-my-zsh/
     ~/.zshrc: zsh/zshrc

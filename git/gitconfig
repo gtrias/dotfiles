@@ -1,12 +1,33 @@
+[branch]
+	autosetuprebase = always
+
 [user]
 	name = Genar Trias Ortiz
 	email = genar@acs.li
+
+[core]
+	editor = vim
+	excludesfile = /home/genar/.gitignore_global
+	compression = 0
+
 [merge]
 	tool = diffconflicts
+
 [mergetool "diffconflicts"]
 	cmd = diffconflicts vim $BASE $LOCAL $REMOTE $MERGED
 	trustExitCode = true
+
 [mergetool]
 	keepBackup = false
+
 [push]
-	default = simple
+	default = current
+
+[diff]
+	tool = vimdiff
+
+[difftool]
+    prompt = false
+
+[init]
+	templatedir = ~/.git_template
