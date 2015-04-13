@@ -10,6 +10,7 @@
     ~/.ssh : ssh/
     ~/.gitconfig : git/gitconfig
     ~/.gitignore_global: git/gitignore_global
+    ~/.gittemplate/: git/gittemplate/
     ~/.vimrc: vim/vimrc
     ~/.oh-my-zsh: zsh/oh-my-zsh/
     ~/.zshrc: zsh/zshrc
