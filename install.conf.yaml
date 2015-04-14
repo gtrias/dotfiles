@@ -22,3 +22,8 @@
         force: true
         create: true
         path: bin/
+    ~/.config/awesome:
+        create: true
+        force: true
+        path: awesomewm/awesome-copycats/
+    awesomewm/awesome-copycats/rc.lua: awesomewm/rc.lua
