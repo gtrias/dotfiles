@@ -7,7 +7,7 @@
     #- [exec scripts/compile-vim-with-lua.sh/vim74_lua]
 
 - link: 
-    ~/.ssh : ssh/
+    ~/.ssh : sshconf/
     ~/.gitconfig : git/gitconfig
     ~/.gitignore_global: git/gitignore_global
     ~/.gittemplate: git/gittemplate/
@@ -29,4 +29,4 @@
     awesomewm/awesome-copycats/rc.lua: awesomewm/rc.lua
 
 - shell: 
-    - [chmod 600 ~/.ssh/*, Fixing .ssh permission]
+    - [chmod 600 ~/.ssh/*, Fixing .ssh permissions]
