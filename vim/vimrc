@@ -24,7 +24,7 @@ set softtabstop=4
 set smartindent
 set autoindent
 let g:detectindent_preferred_expandtab = 1
-let g:detectindent_preferred_indent = 4 
+let g:detectindent_preferred_indent = 4
 
 " Gui settings
 set number
@@ -230,3 +230,16 @@ map <Leader> <Plug>(easymotion-prefix)
 " Disable syntastic for html files
 let g:syntastic_disabled_filetypes=['html']
 
+" Strip trailing whitespaces and save cursor position
+" ref http://vim.wikia.com/wiki/Remove_unwanted_spaces
+function! StripTrailingWhitespace()
+  normal mZ
+  let l:chars = col("$")
+  %s/\s\+$//e
+  if (line("'Z") != line(".")) || (l:chars != col("$"))
+    echo "Trailing whitespace stripped\n"
+  endif
+  normal `Z
+endfunction
+
+autocmd BufWritePre * :call StripTrailingWhitespace()
