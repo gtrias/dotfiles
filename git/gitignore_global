@@ -1,3 +1,5 @@
 *.swp
 .ctags
 tags
+
+.phpcomplete_extended
