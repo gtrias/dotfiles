@@ -12,7 +12,8 @@
     ~/.gitignore_global: git/gitignore_global
     ~/.git_template: git/gittemplate/
     ~/.vimrc: vim/vimrc
-    ~/.vimrc.bundles: vim/vimrc.bundles
+    ~/.vim/syntastic: vim/vim/syntastic
+    ~/.vim/vimrc.bundles: vim/vim/vimrc.bundles
     ~/.vim/snippets: vim/snippets/
     ~/.oh-my-zsh: zsh/oh-my-zsh/
     ~/.zshrc: zsh/zshrc

@@ -1,0 +1,2 @@
+" Disable syntastic for html files
+let g:syntastic_disabled_filetypes=['html']

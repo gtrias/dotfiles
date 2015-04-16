@@ -36,7 +36,7 @@ set statusline=%F\ \%{fugitive#statusline()}\ \%=\ \%y\ -\ %l/%L
 " Neobundle magic {
 "
     call neobundle#begin(expand('~/.vim/bundle'))
-    source ~/.vimrc.bundles
+    source ~/.vim/vimrc.bundles
     NeoBundleCheck
     call neobundle#end()
 " }
@@ -177,7 +177,7 @@ endif
     " tell it to use an undo file
     set undofile
     " set a directory to store the undo history
-    set undodir=~/.vimundo/
+    set undodir=~/.vim/.vimundo/
 " }
 
 autocmd FileType php setlocal omnifunc=phpcomplete_extended#CompletePHP
@@ -185,8 +185,9 @@ autocmd FileType php setlocal omnifunc=phpcomplete_extended#CompletePHP
 " vim easymotion
 map <Leader> <Plug>(easymotion-prefix)
 
-" Disable syntastic for html files
-let g:syntastic_disabled_filetypes=['html']
+" Syntastic prefs {
+    source ~/.vim/syntastic
+" }
 
 " Strip trailing whitespaces and save cursor position
 " ref http://vim.wikia.com/wiki/Remove_unwanted_spaces {
