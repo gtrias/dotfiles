@@ -58,7 +58,6 @@ NeoBundle 'lokaltog/vim-easymotion'
 NeoBundle 'airblade/vim-gitgutter'
 NeoBundle 'groenewege/vim-less'
 NeoBundle 'ciaranm/detectindent'
-NeoBundle 'jceb/vim-orgmode'
 NeoBundle 'chase/vim-ansible-yaml'
 NeoBundle 'evidens/vim-twig'
 NeoBundle 'majutsushi/tagbar'
@@ -79,6 +78,10 @@ NeoBundle 'msanders/snipmate.vim'
 NeoBundle 'scrooloose/nerdcommenter'
 NeoBundle 'ervandew/supertab'
 NeoBundle 'regedarek/ZoomWin'
+NeoBundle 'jceb/vim-orgmode'
+
+" Testing, to validate cake commands for vim
+NeoBundle 'violetyk/cake.vim'
 
 NeoBundleCheck
 
