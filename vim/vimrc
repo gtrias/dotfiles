@@ -32,60 +32,14 @@ set ruler
 set t_Co=256
 set laststatus=2
 set statusline=%F\ \%{fugitive#statusline()}\ \%=\ \%y\ -\ %l/%L
-call neobundle#begin(expand('~/.vim/bundle'))
 
-" Neobundle magic
-NeoBundleFetch 'Shougo/neobundle.vim'
-
-NeoBundle 'Shougo/vimproc', {
-      \ 'build' : {
-      \     'windows' : 'make -f make_mingw32.mak',
-      \     'cygwin' : 'make -f make_cygwin.mak',
-      \     'mac' : 'make -f make_mac.mak',
-      \     'unix' : 'make -f make_unix.mak',
-      \    },
-	  \ }
-
-NeoBundle 'Shougo/unite.vim'
-NeoBundle 'Shougo/vimshell.vim'
-NeoBundle 'Shougo/neosnippet.vim'
-NeoBundle 'Shougo/neosnippet-snippets'
-NeoBundle 'Shougo/neocomplete.vim'
-NeoBundle 'flazz/vim-colorschemes'
-NeoBundle 'scrooloose/nerdtree'
-NeoBundle 'scrooloose/syntastic'
-NeoBundle 'lokaltog/vim-easymotion'
-NeoBundle 'airblade/vim-gitgutter'
-NeoBundle 'groenewege/vim-less'
-NeoBundle 'ciaranm/detectindent'
-NeoBundle 'chase/vim-ansible-yaml'
-NeoBundle 'evidens/vim-twig'
-NeoBundle 'majutsushi/tagbar'
-NeoBundle 'Lokaltog/powerline',{'rtp': 'powerline/bindings/vim/'}
-NeoBundle 'tpope/vim-fugitive'
-NeoBundle 'kien/ctrlp.vim'
-NeoBundle 'vim-scripts/sudo.vim'
-NeoBundle 'm2mdas/phpcomplete-extended'
-NeoBundle 'm2mdas/phpcomplete-extended-symfony'
-NeoBundle 'm2mdas/phpcomplete-extended-laravel'
-NeoBundle 'chriskempson/vim-tomorrow-theme'
-NeoBundle 'groenewege/vim-less'
-NeoBundle 'nathanaelkane/vim-indent-guides'
-NeoBundle 'mattn/gist-vim'
-
-" Testing, to validate
-NeoBundle 'msanders/snipmate.vim'
-NeoBundle 'scrooloose/nerdcommenter'
-NeoBundle 'ervandew/supertab'
-NeoBundle 'regedarek/ZoomWin'
-NeoBundle 'jceb/vim-orgmode'
-
-" Testing, to validate cake commands for vim
-NeoBundle 'violetyk/cake.vim'
-
-NeoBundleCheck
-
-call neobundle#end()
+" Neobundle magic {
+"
+    call neobundle#begin(expand('~/.vim/bundle'))
+    source ~/.vimrc.bundles
+    NeoBundleCheck
+    call neobundle#end()
+" }
 
 
 " Sets current directory every time we open a buffer
@@ -219,11 +173,12 @@ if has('conceal')
   set conceallevel=2 concealcursor=i
 endif
 
-" Persistent undo
-" tell it to use an undo file
-set undofile
-" set a directory to store the undo history
-set undodir=~/.vimundo/
+" Persistent undo  {
+    " tell it to use an undo file
+    set undofile
+    " set a directory to store the undo history
+    set undodir=~/.vimundo/
+" }
 
 autocmd FileType php setlocal omnifunc=phpcomplete_extended#CompletePHP
 
@@ -234,15 +189,21 @@ map <Leader> <Plug>(easymotion-prefix)
 let g:syntastic_disabled_filetypes=['html']
 
 " Strip trailing whitespaces and save cursor position
-" ref http://vim.wikia.com/wiki/Remove_unwanted_spaces
-function! StripTrailingWhitespace()
-  normal mZ
-  let l:chars = col("$")
-  %s/\s\+$//e
-  if (line("'Z") != line(".")) || (l:chars != col("$"))
-    echo "Trailing whitespace stripped\n"
-  endif
-  normal `Z
-endfunction
+" ref http://vim.wikia.com/wiki/Remove_unwanted_spaces {
+    function! StripTrailingWhitespace()
+        normal mZ
+        let l:chars = col("$")
+        %s/\s\+$//e
+        if (line("'Z") != line(".")) || (l:chars != col("$"))
+            echo "Trailing whitespace stripped\n"
+        endif
+        normal `Z
+    endfunction
 
-autocmd BufWritePre * :call StripTrailingWhitespace()
+    autocmd BufWritePre * :call StripTrailingWhitespace()
+" }
+
+
+" Tag file loading {
+    set tags=./tags;/
+" }

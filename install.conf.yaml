@@ -1,17 +1,19 @@
 - clean: ['~']
 
-- shell: 
+- shell:
     - [git submodule update --init --recursive, Installing submodules]
     - [exec fonts/fonts/install.sh, Installing Powerline Fonts]
     - [mkdir -p ~/.vimundo, Creating persistent undo folder]
     #- [exec scripts/compile-vim-with-lua.sh/vim74_lua]
 
-- link: 
+- link:
     ~/.ssh : sshconf/
     ~/.gitconfig : git/gitconfig
     ~/.gitignore_global: git/gitignore_global
-    ~/.gittemplate: git/gittemplate/
+    ~/.git_template: git/gittemplate/
     ~/.vimrc: vim/vimrc
+    ~/.vimrc.bundles: vim/vimrc.bundles
+    ~/.vim/snippets: vim/snippets/
     ~/.oh-my-zsh: zsh/oh-my-zsh/
     ~/.zshrc: zsh/zshrc
     ~/.vim/bundle/neobundle.vim:
@@ -28,5 +30,5 @@
         path: awesomewm/awesome-copycats/
     awesomewm/awesome-copycats/rc.lua: awesomewm/rc.lua
 
-- shell: 
+- shell:
     - [chmod 600 ~/.ssh/*, Fixing .ssh permissions]

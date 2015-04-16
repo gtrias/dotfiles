@@ -19,3 +19,6 @@
 [submodule "awesomewm/awesome-copycats"]
 	path = awesomewm/awesome-copycats
 	url = git@github.com:copycat-killer/awesome-copycats.git
+[submodule "vim/snippets"]
+	path = vim/snippets
+	url = git@github.com:spf13/snipmate-snippets.git
