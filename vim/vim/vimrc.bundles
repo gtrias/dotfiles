@@ -47,6 +47,7 @@ NeoBundle 'jceb/vim-orgmode'
 NeoBundle 'mattn/gist-vim'
 NeoBundle 'vim-scripts/todo-txt.vim'
 NeoBundle 'spf13/piv'
+NeoBundle 'stephpy/vim-php-cs-fixer'
 
 " Testing, to validate cake commands for vim
 NeoBundle 'violetyk/cake.vim'
