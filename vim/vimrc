@@ -189,6 +189,10 @@ map <Leader> <Plug>(easymotion-prefix)
     source ~/.vim/syntastic
 " }
 
+" Vim Symfony (https://github.com/docteurklein/vim-symfony) {
+    source ~/.vim/vim-symfony.vim
+" }
+
 " Strip trailing whitespaces and save cursor position
 " ref http://vim.wikia.com/wiki/Remove_unwanted_spaces {
     function! StripTrailingWhitespace()
@@ -208,3 +212,8 @@ map <Leader> <Plug>(easymotion-prefix)
 " Tag file loading {
     set tags=./tags;/
 " }
+
+" Phpunit integration
+com! -nargs=* Phpunit make -c app <q-args> | cw
+:compiler phpunit
+

@@ -13,6 +13,7 @@
     ~/.git_template: git/gittemplate/
     ~/.vimrc: vim/vimrc
     ~/.vim/syntastic: vim/vim/syntastic
+    ~/.vim/vim-symfony.vim: vim/vim/vim-symfony.vim
     ~/.vim/vimrc.bundles: vim/vim/vimrc.bundles
     ~/.vim/snippets: vim/snippets/
     ~/.oh-my-zsh: zsh/oh-my-zsh/
