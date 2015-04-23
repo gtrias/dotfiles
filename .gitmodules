@@ -22,3 +22,6 @@
 [submodule "vim/snippets"]
 	path = vim/snippets
 	url = git@github.com:spf13/snipmate-snippets.git
+[submodule "ruby/rbenv"]
+	path = ruby/rbenv
+	url = git://github.com/sstephenson/rbenv.git

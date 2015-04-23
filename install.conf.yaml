@@ -31,6 +31,7 @@
         force: true
         path: awesomewm/awesome-copycats/
     awesomewm/awesome-copycats/rc.lua: awesomewm/rc.lua
+    ~/.gemrc: ruby/gemrc
 
 - shell:
     - [chmod 600 ~/.ssh/*, Fixing .ssh permissions]

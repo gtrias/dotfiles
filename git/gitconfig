@@ -31,3 +31,5 @@
 
 [init]
 	templatedir = ~/.git_template
+[color]
+	ui = true
