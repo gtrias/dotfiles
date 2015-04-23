@@ -51,6 +51,9 @@ NeoBundle 'stephpy/vim-php-cs-fixer'
 NeoBundle 'docteurklein/vim-symfony'
 NeoBundle 'afternoon/vim-phpunit'
 NeoBundle 'edsono/vim-matchit'
+NeoBundle 'xolox/vim-misc'
+NeoBundle 'xolox/vim-session'
+NeoBundle 'editorconfig/editorconfig-vim'
 
 " Testing, to validate cake commands for vim
 NeoBundle 'violetyk/cake.vim'

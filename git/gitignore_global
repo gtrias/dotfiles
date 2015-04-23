@@ -2,5 +2,6 @@
 *.*~
 .ctags
 tags
+.vimrc
 
 .phpcomplete_extended
