@@ -23,8 +23,17 @@ set shiftwidth=4
 set softtabstop=4
 set smartindent
 set autoindent
-let g:detectindent_preferred_expandtab = 1
-let g:detectindent_preferred_indent = 4
+set cindent
+" let g:detectindent_preferred_expandtab = 1
+" let g:detectindent_preferred_indent = 4
+if has("autocmd")
+  " Enable file type detection.
+  " Use the default filetype settings, so that mail gets 'tw' set to 72,
+  " 'cindent' is on in C files, etc.
+  " Also load indent files, to automatically do language-dependent indenting.
+  " filetype plugin indent on
+  " ...
+endif
 
 " Gui settings
 set number
@@ -217,3 +226,18 @@ map <Leader> <Plug>(easymotion-prefix)
 com! -nargs=* Phpunit make -c app <q-args> | cw
 :compiler phpunit
 
+
+" Saving vim status on exit, per directory (Go away and come back)
+" {
+"
+" Creates a session
+:let g:session_autoload = 'yes'
+:let g:session_autosave = 'yes'
+" }
+
+" Load per project vimrc if exists {
+    let b:projectconf = getcwd() . "/.vimrc"
+    if (filereadable(b:projectconf))
+        exe "source" . b:projectconf
+    endif
+" }

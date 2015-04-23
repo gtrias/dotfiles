@@ -43,6 +43,10 @@ NeoBundle 'spf13/piv'
 NeoBundle 'stephpy/vim-php-cs-fixer'
 NeoBundle 'docteurklein/vim-symfony'
 NeoBundle 'afternoon/vim-phpunit'
+NeoBundle 'edsono/vim-matchit'
+NeoBundle 'xolox/vim-misc'
+NeoBundle 'xolox/vim-session'
+NeoBundle 'editorconfig/editorconfig-vim'
 NeoBundle 'tpope/vim-rails'
 NeoBundle 'nathanaelkane/vim-indent-guides'
 NeoBundle 'groenewege/vim-less'
@@ -51,3 +55,7 @@ NeoBundle 'm2mdas/phpcomplete-extended-symfony'
 NeoBundle 'm2mdas/phpcomplete-extended-laravel'
 NeoBundle 'vim-scripts/sudo.vim'
 NeoBundle 'lokaltog/vim-easymotion'
+
+" Testing, to validate cake commands for vim
+NeoBundle 'violetyk/cake.vim'
+

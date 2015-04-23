@@ -3,7 +3,6 @@
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
     - [exec fonts/fonts/install.sh, Installing Powerline Fonts]
-    - [mkdir -p ~/.vimundo, Creating persistent undo folder]
     #- [exec scripts/compile-vim-with-lua.sh/vim74_lua]
 
 - link:
@@ -35,3 +34,5 @@
 
 - shell:
     - [chmod 600 ~/.ssh/*, Fixing .ssh permissions]
+    - [mkdir -p ~/.vim/.vimundo, Creating persistent undo folder]
+    - [mkdir -p ~/.vim/sessions, Creating persistent sessions folder]
