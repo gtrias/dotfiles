@@ -17,6 +17,7 @@
     ~/.vim/snippets: vim/snippets/
     ~/.oh-my-zsh: zsh/oh-my-zsh/
     ~/.zshrc: zsh/zshrc
+    ~/.bash_it: bash/bash-it
     ~/.vim/bundle/neobundle.vim:
         force: true
         create: true
@@ -33,6 +34,7 @@
     ~/.gemrc: ruby/gemrc
 
 - shell:
+    - [exec ~/.bash_it/install.sh --none, Installing bash-it]
     - [chmod 600 ~/.ssh/*, Fixing .ssh permissions]
     - [mkdir -p ~/.vim/.vimundo, Creating persistent undo folder]
     - [mkdir -p ~/.vim/sessions, Creating persistent sessions folder]

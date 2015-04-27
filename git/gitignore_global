@@ -2,6 +2,7 @@
 *.*~
 .ctags
 tags
-.vimrc
+.vimrc.project
+.DS_Store
 
 .phpcomplete_extended

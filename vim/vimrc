@@ -236,7 +236,7 @@ com! -nargs=* Phpunit make -c app <q-args> | cw
 " }
 
 " Load per project vimrc if exists {
-    let b:projectconf = getcwd() . "/.vimrc"
+    let b:projectconf = getcwd() . "/.vimrc.project"
     if (filereadable(b:projectconf))
         exe "source" . b:projectconf
     endif
