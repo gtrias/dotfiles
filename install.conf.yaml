@@ -16,8 +16,10 @@
     ~/.vim/vimrc.bundles: vim/vim/vimrc.bundles
     ~/.vim/snippets: vim/snippets/
     ~/.oh-my-zsh: zsh/oh-my-zsh/
+    ~/.alias.common.sh: shells-common/alias.common.sh
     ~/.zshrc: zsh/zshrc
     ~/.bash_it: bash/bash-it
+    ~/.bashrc: bash/bashrc
     ~/.vim/bundle/neobundle.vim:
         force: true
         create: true

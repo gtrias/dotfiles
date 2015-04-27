@@ -53,8 +53,10 @@ plugins=(git, composer, symfony2)
 export PATH="/home/genar/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:$HOME/.rbenv/bin"
 export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"
 
-# TODO: Make this only runnable if rbenv exists
-# eval "$(rbenv init - > /dev/null )"
+# Loading rbenv if it's installed
+if ! type "rbenv" > /dev/null; then
+    eval "$(rbenv init - > /dev/null )"
+fi
 
 source $ZSH/oh-my-zsh.sh
 
@@ -82,5 +84,4 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias fixmouse="dconf write /org/gnome/settings-daemon/plugins/cursor/active false"
-alias :q="exit"
+source $HOME/alias.common.sh
