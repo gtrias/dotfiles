@@ -33,6 +33,7 @@
         force: true
         path: awesomewm/awesome-copycats/
     awesomewm/awesome-copycats/rc.lua: awesomewm/rc.lua
+    awesomewm/awesome-copycats/custom-rc.lua: awesomewm/custom-rc.lua
     ~/.gemrc: ruby/gemrc
 
 - shell:
