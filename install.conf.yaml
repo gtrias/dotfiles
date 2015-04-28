@@ -36,7 +36,7 @@
     ~/.gemrc: ruby/gemrc
 
 - shell:
-    - [exec ~/.bash_it/install.sh --none, Installing bash-it]
+    # - [exec ~/.bash_it/install.sh --none, Installing bash-it]
     - [chmod 600 ~/.ssh/*, Fixing .ssh permissions]
     - [mkdir -p ~/.vim/.vimundo, Creating persistent undo folder]
     - [mkdir -p ~/.vim/sessions, Creating persistent sessions folder]
