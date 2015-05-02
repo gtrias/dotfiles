@@ -13,9 +13,6 @@
 [submodule "scripts/compile-vim-with-lua.sh"]
 	path = scripts/compile-vim-with-lua.sh
 	url = https://gist.github.com/7a093da7c81cb216a14a.git
-[submodule "sshconf"]
-	path = sshconf
-	url = http://gitlab.acs.li/gtrias/sshconf.git
 [submodule "awesomewm/awesome-copycats"]
 	path = awesomewm/awesome-copycats
 	url = git@github.com:copycat-killer/awesome-copycats.git

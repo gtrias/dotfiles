@@ -6,7 +6,6 @@
     #- [exec scripts/compile-vim-with-lua.sh/vim74_lua]
 
 - link:
-    ~/.ssh : sshconf/
     ~/.gitconfig : git/gitconfig
     ~/.gitignore_global: git/gitignore_global
     ~/.git_template: git/gittemplate/
@@ -37,7 +36,6 @@
     ~/.gemrc: ruby/gemrc
 
 - shell:
-    # - [exec ~/.bash_it/install.sh --none, Installing bash-it]
-    - [chmod 600 ~/.ssh/*, Fixing .ssh permissions]
+    - [exec ~/.bash_it/install.sh --all, Installing bash-it]
     - [mkdir -p ~/.vim/.vimundo, Creating persistent undo folder]
     - [mkdir -p ~/.vim/sessions, Creating persistent sessions folder]
