@@ -28,3 +28,7 @@ export SCM_CHECK=true
 
 # Load Bash It
 source $BASH_IT/bash_it.sh
+
+source $HOME/.alias.common.sh
+
+export PATH="/home/genar/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:$HOME/.rbenv/bin:$HOME/.gem/ruby/2.2.0/bin"

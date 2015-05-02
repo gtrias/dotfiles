@@ -5,7 +5,7 @@ export ZSH=/home/genar/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="pygmalion"
+ZSH_THEME="agnoster"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -45,13 +45,14 @@ ZSH_THEME="pygmalion"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git, composer, symfony2)
+plugins=(git, composer, symfony2, rails)
 
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"
 export PATH="/home/genar/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:$HOME/.rbenv/bin"
 export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"
+export PATH="$HOME/.gem/ruby/2.2.0/bin:$PATH"
 
 # Loading rbenv if it's installed
 if ! type "rbenv" > /dev/null; then
