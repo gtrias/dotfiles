@@ -13,9 +13,6 @@
 [submodule "scripts/compile-vim-with-lua.sh"]
 	path = scripts/compile-vim-with-lua.sh
 	url = https://gist.github.com/7a093da7c81cb216a14a.git
-[submodule "awesomewm/awesome-copycats"]
-	path = awesomewm/awesome-copycats
-	url = git@github.com:copycat-killer/awesome-copycats.git
 [submodule "vim/snippets"]
 	path = vim/snippets
 	url = git@github.com:spf13/snipmate-snippets.git
