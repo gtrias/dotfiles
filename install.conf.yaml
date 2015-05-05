@@ -11,10 +11,7 @@
     ~/.gitignore_global: git/gitignore_global
     ~/.git_template: git/gittemplate/
     ~/.vimrc: vim/vimrc
-    ~/.vim/syntastic: vim/vim/syntastic
-    ~/.vim/vim-symfony.vim: vim/vim/vim-symfony.vim
-    ~/.vim/vimrc.bundles: vim/vim/vimrc.bundles
-    ~/.vim/snippets: vim/snippets/
+    ~/.vim/custom: vim/custom/
     ~/.oh-my-zsh: zsh/oh-my-zsh/
     ~/.alias.common.sh: shells-common/alias.common.sh
     ~/.zshrc: zsh/zshrc
@@ -31,7 +28,8 @@
     ~/.config/awesome:
         create: true
         force: true
-        path: awesomewm/awesome-copycats/
+        # path: awesomewm/awesome-copycats/
+        path: awesomewm/powerarrow/
     awesomewm/awesome-copycats/rc.lua: awesomewm/rc.lua
     awesomewm/awesome-copycats/custom-rc.lua: awesomewm/custom-rc.lua
     ~/.gemrc: ruby/gemrc

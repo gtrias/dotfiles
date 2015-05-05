@@ -55,7 +55,4 @@ NeoBundle 'm2mdas/phpcomplete-extended-symfony'
 NeoBundle 'm2mdas/phpcomplete-extended-laravel'
 NeoBundle 'vim-scripts/sudo.vim'
 NeoBundle 'lokaltog/vim-easymotion'
-
-" Testing, to validate cake commands for vim
-NeoBundle 'violetyk/cake.vim'
-
+NeoBundle 'altercation/vim-colors-solarized'

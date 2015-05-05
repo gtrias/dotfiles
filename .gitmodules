@@ -28,3 +28,6 @@
 [submodule "bash/bash-it"]
 	path = bash/bash-it
 	url = https://github.com/Bash-it/bash-it.git
+[submodule "awesomewm/powerarrow"]
+	path = awesomewm/powerarrow
+	url = https://github.com/romockee/powerarrow.git

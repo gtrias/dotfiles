@@ -1,5 +1,8 @@
 " Genar Vim Settings
 
+" Changing leader key to ,
+let mapleader=","
+
 " General settings
 syntax enable
 set nocompatible
@@ -7,7 +10,6 @@ set encoding=utf-8
 set autowrite
 set timeoutlen=500
 set hidden
-set runtimepath+=~/.vim/bundle/neobundle.vim/
 set mouse=a
 
 " Folding settings
@@ -35,21 +37,21 @@ if has("autocmd")
   " ...
 endif
 
+" Neobundle magic {
+"
+    set runtimepath+=~/.vim/bundle/neobundle.vim/
+    call neobundle#begin(expand('~/.vim/bundle'))
+    source ~/.vim/custom/vimrc.bundles
+    NeoBundleCheck
+    call neobundle#end()
+" }
+
 " Gui settings
 set number
 set ruler
 set t_Co=256
 set laststatus=2
 set statusline=%F\ \%{fugitive#statusline()}\ \%=\ \%y\ -\ %l/%L
-
-" Neobundle magic {
-"
-    call neobundle#begin(expand('~/.vim/bundle'))
-    source ~/.vim/vimrc.bundles
-    NeoBundleCheck
-    call neobundle#end()
-" }
-
 
 " Sets current directory every time we open a buffer
 autocmd BufEnter * silent! lcd %:p:h
@@ -74,7 +76,7 @@ let g:vimshell_prompt_expr =
 
 filetype plugin indent on
 
-colorscheme kkruby
+" Colorstyles
 highlight LineNr ctermfg=darkgrey
 highlight SignColumn ctermbg=black
 highlight Folded ctermfg=11 ctermbg=23
@@ -194,12 +196,21 @@ autocmd FileType php setlocal omnifunc=phpcomplete_extended#CompletePHP
 " vim easymotion
 map <Leader> <Plug>(easymotion-prefix)
 
+" Loading external configs
 " Syntastic prefs {
-    source ~/.vim/syntastic
+    source ~/.vim/custom/syntastic
 " }
 
 " Vim Symfony (https://github.com/docteurklein/vim-symfony) {
-    source ~/.vim/vim-symfony.vim
+    source ~/.vim/custom/vim-symfony.vim
+" }
+
+" Vim Solarized settings {
+    source ~/.vim/custom/colorscheme.vim
+" }
+
+" Vim custom shortcuts {
+    source ~/.vim/custom/shortcuts.vim
 " }
 
 " Strip trailing whitespaces and save cursor position
@@ -241,3 +252,4 @@ com! -nargs=* Phpunit make -c app <q-args> | cw
         exe "source" . b:projectconf
     endif
 " }
+
