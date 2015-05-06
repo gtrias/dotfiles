@@ -30,6 +30,7 @@ NeoBundle 'tpope/vim-fugitive'
 NeoBundle 'kien/ctrlp.vim'
 NeoBundle 'chriskempson/vim-tomorrow-theme'
 NeoBundle 'violetyk/cake.vim'
+NeoBundle 'godlygeek/tabular'
 
 " Testing, to validate
 NeoBundle 'msanders/snipmate.vim'
@@ -56,3 +57,4 @@ NeoBundle 'm2mdas/phpcomplete-extended-laravel'
 NeoBundle 'vim-scripts/sudo.vim'
 NeoBundle 'lokaltog/vim-easymotion'
 NeoBundle 'altercation/vim-colors-solarized'
+NeoBundle 'sjl/gundo.vim'
