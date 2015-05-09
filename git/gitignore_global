@@ -1,3 +1,5 @@
+# IDE Files ignores
+nbproject/
 *.swp
 *.swo
 *.*~
@@ -6,5 +8,4 @@ tags
 .vimrc.project
 .DS_Store
 .editorconfig
-
 .phpcomplete_extended
