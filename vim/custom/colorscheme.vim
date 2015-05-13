@@ -1,12 +1,13 @@
 " Solarized settings
 let g:solarized_termcolors=256
-let hour = strftime("%H")
-if 6 <= hour && hour < 18
-    set background=light
-else
-    set background=dark
-endif
+"let hour = strftime("%H")
+"if 6 <= hour && hour < 18
+    "set background=light
+"else
+    "set background=dark
+"endif
 colorscheme solarized
+set background=dark
 
 " solarized toggle background
 function ToggleBackground()
