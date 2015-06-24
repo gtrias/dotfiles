@@ -32,6 +32,10 @@
         path: awesomewm/awesomeconfig/
         # awesomewm/awesome-copycats/rc.lua: awesomewm/rc.lua
         # awesomewm/awesome-copycats/custom-rc.lua: awesomewm/custom-rc.lua
+    ~/.config/mc:
+        create: true
+        force: true
+        path: mc/
     ~/.gemrc: ruby/gemrc
 
 - shell:
