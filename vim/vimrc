@@ -58,10 +58,10 @@ set statusline=%F\ \%{fugitive#statusline()}\ \%=\ \%y\ -\ %l/%L
 autocmd BufEnter * silent! lcd %:p:h
 
 " gitgutter settings
-let g:gitgutter_sign_added = '++'
-let g:gitgutter_sign_modified = 'MM'
-let g:gitgutter_sign_removed = '--'
-let g:gitgutter_sign_modified_removed = 'M-'
+" let g:gitgutter_sign_added = '++'
+" let g:gitgutter_sign_modified = 'MM'
+" let g:gitgutter_sign_removed = '--'
+" let g:gitgutter_sign_modified_removed = 'M-'
 
 filetype plugin indent on
 

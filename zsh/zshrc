@@ -45,7 +45,7 @@ ZSH_THEME="agnoster"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git, composer, symfony2, rails, bower)
+plugins=(gitfast, composer, symfony2, cake, rails, bower, autojump, chucknorris, compleat, debian)
 
 # User configuration
 
@@ -53,6 +53,9 @@ plugins=(git, composer, symfony2, rails, bower)
 export PATH="/home/genar/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:$HOME/.rbenv/bin"
 export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"
 export PATH="$HOME/.gem/ruby/2.2.0/bin:$PATH"
+export PATH="$HOME/src/android-sdk-linux:$PATH"
+export PATH="$HOME/src/android-sdk-linux/tools:$PATH"
+export PATH="$HOME/src/android-sdk-linux/platform-tools:$PATH"
 
 # Loading rbenv if it's installed
 if ! type "rbenv" > /dev/null; then
