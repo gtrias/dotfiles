@@ -9,10 +9,11 @@
     ~/.ssh : sshconf/
     ~/.gitconfig : git/gitconfig
     ~/.gitignore_global: git/gitignore_global
-    ~/.git_template: git/gittemplate/
     ~/.vimrc: vim/vimrc
     ~/.vim/custom: vim/custom/
     ~/.oh-my-zsh: zsh/oh-my-zsh/
+    ~/.zprezto: zsh/prezto/
+    ~/.oh-my-fish: fish/oh-my-fish/
     ~/.alias.common.sh: shells-common/alias.common.sh
     ~/.zshrc: zsh/zshrc
     ~/.bash_it: bash/bash-it
@@ -33,6 +34,10 @@
         path: awesomewm/awesomeconfig/
         # awesomewm/awesome-copycats/rc.lua: awesomewm/rc.lua
         # awesomewm/awesome-copycats/custom-rc.lua: awesomewm/custom-rc.lua
+    ~/.config/mc:
+        create: true
+        force: true
+        path: mc/
     ~/.gemrc: ruby/gemrc
 
 - shell:

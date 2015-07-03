@@ -34,3 +34,12 @@
 [submodule "awesomewm/awesomeconfig"]
 	path = awesomewm/awesomeconfig
 	url = http://gitlab.acs.li/gtrias/awesomeconfig.git
+[submodule "fish/oh-my-fish"]
+	path = fish/oh-my-fish
+	url = git@github.com:bpinto/oh-my-fish.git
+[submodule "private-scripts"]
+	path = private-scripts
+	url = http://gitlab.acs.li/gtrias/scripts.git
+[submodule "zsh/prezto"]
+	path = zsh/prezto
+	url = https://github.com/sorin-ionescu/prezto.git

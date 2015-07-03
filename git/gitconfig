@@ -1,9 +1,9 @@
+[user]
+	name = Genar Trias Ortiz\n
+	email = genar@acs.li
+
 [branch]
 	autosetuprebase = always
-
-[user]
-	name = Genar Trias Ortiz
-	email = genar@acs.li
 
 [core]
 	editor = vim
@@ -30,6 +30,7 @@
     prompt = false
 
 [init]
-	templatedir = ~/.git_template
+	templatedir = ~/dotfiles/gittemplate
+
 [color]
 	ui = true
