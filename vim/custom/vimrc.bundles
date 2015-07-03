@@ -66,6 +66,9 @@ NeoBundle 'mhinz/vim-startify'
 NeoBundle 'ekalinin/Dockerfile.vim'
 NeoBundle 'mitsuhiko/vim-jinja'
 NeoBundle 'ciaranm/detectindent'
+NeoBundle 'Wutzara/vim-materialtheme'
+NeoBundle 'nathanaelkane/vim-indent-guides'
+NeoBundle 'keith/investigate.vim'
 
 " PHP Refactor {{
     NeoBundle 'adoy/vim-php-refactoring-toolbox'

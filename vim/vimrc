@@ -11,6 +11,7 @@ set autowrite
 set timeoutlen=500
 set hidden
 set mouse=a
+set nowrap
 
 " Folding settings
 set foldmethod=indent
@@ -26,8 +27,6 @@ set softtabstop=4
 set smartindent
 set autoindent
 set cindent
-" let g:detectindent_preferred_expandtab = 1
-" let g:detectindent_preferred_indent = 4
 
 if has("autocmd")
   " Enable file type detection.
@@ -38,21 +37,21 @@ if has("autocmd")
   " ...
 endif
 
-" Neobundle magic {
-"
+" Neobundle magic {{
     set runtimepath+=~/.vim/bundle/neobundle.vim/
     call neobundle#begin(expand('~/.vim/bundle'))
     source ~/.vim/custom/vimrc.bundles
     NeoBundleCheck
     call neobundle#end()
-" }
+" }}
 
-" Gui settings
+" Gui settings {{
 set number
 set ruler
 set t_Co=256
 set laststatus=2
 set statusline=%F\ \%{fugitive#statusline()}\ \%=\ \%y\ -\ %l/%L
+" }}
 
 " Sets current directory every time we open a buffer
 autocmd BufEnter * silent! lcd %:p:h
@@ -123,9 +122,12 @@ map <Leader> <Plug>(easymotion-prefix)
     source ~/.vim/custom/startify.vim
 " }
 
+" Vim indent guides confs {
+    source ~/.vim/custom/indent-guides.vim
+" }
 
 " Strip trailing whitespaces and save cursor position
-" ref http://vim.wikia.com/wiki/Remove_unwanted_spaces {
+" ref http://vim.wikia.com/wiki/Remove_unwanted_spaces {{
     function! StripTrailingWhitespace()
         normal mZ
         let l:chars = col("$")
@@ -137,12 +139,12 @@ map <Leader> <Plug>(easymotion-prefix)
     endfunction
 
     autocmd BufWritePre * :call StripTrailingWhitespace()
-" }
+" }}
 
 
-" Tag file loading {
+" Tag file loading {{
     set tags=./tags;/
-" }
+" }}
 
 " Phpunit integration
 com! -nargs=* Phpunit make -c app <q-args> | cw
@@ -150,17 +152,17 @@ com! -nargs=* Phpunit make -c app <q-args> | cw
 
 
 " Saving vim status on exit, per directory (Go away and come back)
-" {
+" {{
 "
 " Creates a session
-:let g:session_autoload = 'yes'
-:let g:session_autosave = 'yes'
-" }
+    :let g:session_autoload = 'yes'
+    :let g:session_autosave = 'yes'
+" }}
 
-" Load per project vimrc if exists {
+" Load per project vimrc if exists {{
     let b:projectconf = getcwd() . "/.vimrc.project"
     if (filereadable(b:projectconf))
         exe "source" . b:projectconf
     endif
-" }
+" }}
 

@@ -6,7 +6,8 @@ let g:solarized_termcolors=256
 "else
     "set background=dark
 "endif
-colorscheme solarized
+" colorscheme solarized
+colorscheme materialtheme
 set background=dark
 
 " solarized toggle background

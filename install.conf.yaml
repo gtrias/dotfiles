@@ -12,6 +12,7 @@
     ~/.vimrc: vim/vimrc
     ~/.vim/custom: vim/custom/
     ~/.oh-my-zsh: zsh/oh-my-zsh/
+    ~/.zprezto: zsh/prezto/
     ~/.oh-my-fish: fish/oh-my-fish/
     ~/.alias.common.sh: shells-common/alias.common.sh
     ~/.zshrc: zsh/zshrc
