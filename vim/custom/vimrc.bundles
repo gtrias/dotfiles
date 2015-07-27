@@ -69,6 +69,7 @@ NeoBundle 'ciaranm/detectindent'
 NeoBundle 'Wutzara/vim-materialtheme'
 NeoBundle 'nathanaelkane/vim-indent-guides'
 NeoBundle 'keith/investigate.vim'
+NeoBundle 'fatih/vim-go'
 
 " PHP Refactor {{
     NeoBundle 'adoy/vim-php-refactoring-toolbox'
