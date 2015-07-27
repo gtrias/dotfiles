@@ -30,6 +30,11 @@ NeoBundle 'violetyk/cake.vim'
 NeoBundle 'godlygeek/tabular'
 NeoBundle 'editorconfig/editorconfig-vim'
 NeoBundle 'edsono/vim-matchit'
+NeoBundle 'Wutzara/vim-materialtheme'
+NeoBundle 'nathanaelkane/vim-indent-guides'
+NeoBundle 'ekalinin/Dockerfile.vim'
+NeoBundle 'mitsuhiko/vim-jinja'
+NeoBundle 'lokaltog/vim-easymotion'
 
 " Testing, to validate
 NeoBundle 'msanders/snipmate.vim'
@@ -53,21 +58,12 @@ NeoBundle 'm2mdas/phpcomplete-extended'
 NeoBundle 'm2mdas/phpcomplete-extended-symfony'
 NeoBundle 'm2mdas/phpcomplete-extended-laravel'
 NeoBundle 'vim-scripts/sudo.vim'
-NeoBundle 'lokaltog/vim-easymotion'
 NeoBundle 'altercation/vim-colors-solarized'
 NeoBundle 'sjl/gundo.vim'
 NeoBundle 'vim-scripts/vim-php-namespace'
 NeoBundle 'szw/vim-tags'
 NeoBundle 'mkusher/padawan.vim'
 NeoBundle 'mhinz/vim-startify'
-" NeoBundle 'airblade/vim-gitgutter'
-" NeoBundle 'Xuyuanp/nerdtree-git-plugin'
-" NeoBundle 'tpope/vim-fugitive'
-NeoBundle 'ekalinin/Dockerfile.vim'
-NeoBundle 'mitsuhiko/vim-jinja'
-NeoBundle 'ciaranm/detectindent'
-NeoBundle 'Wutzara/vim-materialtheme'
-NeoBundle 'nathanaelkane/vim-indent-guides'
 NeoBundle 'keith/investigate.vim'
 
 " PHP Refactor {{
@@ -75,3 +71,9 @@ NeoBundle 'keith/investigate.vim'
     NeoBundle 'vim-php/vim-php-refactoring'
     NeoBundle 'beberlei/vim-php-refactor'
 " }}
+
+" Bundle trash
+" NeoBundle 'airblade/vim-gitgutter' // Disabled because it made vim very slow
+" NeoBundle 'Xuyuanp/nerdtree-git-plugin' // Disabled because it made vim very slow
+" NeoBundle 'tpope/vim-fugitive' // Disabled because it made vim very slow
+" NeoBundle 'fmoralesc/vim-pad' // Found not really useful
