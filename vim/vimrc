@@ -99,7 +99,7 @@ map <Leader> <Plug>(easymotion-prefix)
 
 " Loading external configs
 " Syntastic prefs {
-    source ~/.vim/custom/syntastic
+    source ~/.vim/custom/syntastic.vim
 " }
 
 " Vim Symfony (https://github.com/docteurklein/vim-symfony) {

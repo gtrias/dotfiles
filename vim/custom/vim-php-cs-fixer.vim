@@ -1,6 +1,6 @@
 " If php-cs-fixer is in $PATH, you don't need to define line below
-" let g:php_cs_fixer_path = "~/.composer/vendor/bin/php-cs-fixer" " define the path to the php-cs-fixer.phar
-let g:php_cs_fixer_level = "all"                  " which level ?
+let g:php_cs_fixer_path = "~/.composer/vendor/bin/php-cs-fixer" " define the path to the php-cs-fixer.phar
+let g:php_cs_fixer_level = "symfony"                  " which level ?
 let g:php_cs_fixer_config = "default"             " configuration
 let g:php_cs_fixer_php_path = "php"               " Path to PHP
 " If you want to define specific fixers:
