@@ -67,6 +67,8 @@ NeoBundle 'mhinz/vim-startify'
 NeoBundle 'keith/investigate.vim'
 NeoBundle 'fatih/vim-go'
 NeoBundle 's3rvac/AutoFenc' " Fucking people not using utf8
+NeoBundle 'davidhalter/jedi-vim'
+NeoBundle 'dsawardekar/ember.vim'
 
 " PHP Refactor {{
     NeoBundle 'adoy/vim-php-refactoring-toolbox'
