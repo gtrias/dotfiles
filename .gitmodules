@@ -40,3 +40,6 @@
 [submodule "sshconf"]
 	path = sshconf
 	url = https://git.acs.li/genar/sshconf.git
+[submodule "private-scripts"]
+	path = private-scripts
+	url = https://git.acs.li/genar/scripts.git
