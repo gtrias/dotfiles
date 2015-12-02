@@ -8,3 +8,6 @@ tags
 .editorconfig
 
 .phpcomplete_extended
+.idea/*
+
+cache.properties

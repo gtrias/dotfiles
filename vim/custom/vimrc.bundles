@@ -31,10 +31,12 @@ NeoBundle 'godlygeek/tabular'
 NeoBundle 'editorconfig/editorconfig-vim'
 NeoBundle 'edsono/vim-matchit'
 NeoBundle 'Wutzara/vim-materialtheme'
-NeoBundle 'nathanaelkane/vim-indent-guides'
 NeoBundle 'ekalinin/Dockerfile.vim'
 NeoBundle 'mitsuhiko/vim-jinja'
 NeoBundle 'lokaltog/vim-easymotion'
+NeoBundle 'fatih/vim-go'
+NeoBundle 'nathanaelkane/vim-indent-guides'
+NeoBundle 'sjl/gundo.vim'
 
 " Testing, to validate
 NeoBundle 'msanders/snipmate.vim'
@@ -51,7 +53,6 @@ NeoBundle 'afternoon/vim-phpunit'
 NeoBundle 'xolox/vim-misc'
 NeoBundle 'xolox/vim-session'
 NeoBundle 'tpope/vim-rails'
-NeoBundle 'nathanaelkane/vim-indent-guides'
 NeoBundle 'groenewege/vim-less'
 NeoBundle 'shawncplus/phpcomplete.vim'
 NeoBundle 'm2mdas/phpcomplete-extended'
@@ -59,14 +60,13 @@ NeoBundle 'm2mdas/phpcomplete-extended-symfony'
 NeoBundle 'm2mdas/phpcomplete-extended-laravel'
 NeoBundle 'vim-scripts/sudo.vim'
 NeoBundle 'altercation/vim-colors-solarized'
-NeoBundle 'sjl/gundo.vim'
 NeoBundle 'vim-scripts/vim-php-namespace'
 NeoBundle 'szw/vim-tags'
 NeoBundle 'mkusher/padawan.vim'
 NeoBundle 'mhinz/vim-startify'
 NeoBundle 'keith/investigate.vim'
-NeoBundle 'fatih/vim-go'
-NeoBundle 's3rvac/AutoFenc' " Fucking people not using utf8
+NeoBundle 'junegunn/goyo.vim' " Distraction less mode
+NeoBundle 'junegunn/limelight.vim' " Hyperfocus writting
 
 " PHP Refactor {{
     NeoBundle 'adoy/vim-php-refactoring-toolbox'
@@ -79,3 +79,14 @@ NeoBundle 's3rvac/AutoFenc' " Fucking people not using utf8
 " NeoBundle 'Xuyuanp/nerdtree-git-plugin' // Disabled because it made vim very slow
 " NeoBundle 'tpope/vim-fugitive' // Disabled because it made vim very slow
 " NeoBundle 'fmoralesc/vim-pad' // Found not really useful
+" NeoBundle 's3rvac/AutoFenc' " Fucking people not using utf8
+" NeoBundle 'Valloric/YouCompleteMe', { // Finally not get padawan
+" autocomplete
+     "\ 'build'      : {
+        "\ 'mac'     : './install.py',
+        "\ 'unix'    : './install.py',
+        "\ 'windows' : 'install.py',
+        "\ 'cygwin'  : './install.py'
+        "\ }
+     "\ }
+

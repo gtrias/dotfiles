@@ -11,3 +11,6 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
 fi
 
 # Customize to your needs...
+eval $(thefuck --alias)
+
+export PATH=/home/genar/.composer/vendor/bin:$PATH
