@@ -6,6 +6,7 @@
 	editor = vim
 	excludesfile = /home/genar/.gitignore_global
 	compression = 0
+	safecrlf = false
 
 [branch]
 	autosetuprebase = always
