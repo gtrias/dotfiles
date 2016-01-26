@@ -3,7 +3,7 @@
 	url = https://github.com/anishathalye/dotbot
 [submodule "fonts/fonts"]
 	path = fonts/fonts
-	url = git@github.com:powerline/fonts.git
+	url = https://github.com/powerline/fonts.git
 [submodule "zsh/oh-my-zsh"]
 	path = zsh/oh-my-zsh
 	url = git@github.com:robbyrussell/oh-my-zsh.git
@@ -13,27 +13,18 @@
 [submodule "scripts/compile-vim-with-lua.sh"]
 	path = scripts/compile-vim-with-lua.sh
 	url = https://gist.github.com/7a093da7c81cb216a14a.git
-[submodule "awesomewm/awesome-copycats"]
-	path = awesomewm/awesome-copycats
-	url = git@github.com:copycat-killer/awesome-copycats.git
 [submodule "vim/snippets"]
 	path = vim/snippets
 	url = git@github.com:spf13/snipmate-snippets.git
 [submodule "ruby/rbenv"]
 	path = ruby/rbenv
-	url = git://github.com/sstephenson/rbenv.git
+	url = git://github.com:sstephenson/rbenv.git
 [submodule "bash/bash-it"]
 	path = bash/bash-it
 	url = https://github.com/Bash-it/bash-it.git
 [submodule "awesomewm/powerarrow"]
 	path = awesomewm/powerarrow
 	url = https://github.com/romockee/powerarrow.git
-[submodule "awesomewm/awesomeconfig"]
-	path = awesomewm/awesomeconfig
-	url = http://gitlab.acs.li/gtrias/awesomeconfig.git
-[submodule "fish/oh-my-fish"]
-	path = fish/oh-my-fish
-	url = git@github.com:bpinto/oh-my-fish.git
 [submodule "zsh/prezto"]
 	path = zsh/prezto
 	url = https://github.com/sorin-ionescu/prezto.git
