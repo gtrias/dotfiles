@@ -73,6 +73,7 @@ NeoBundle 'junegunn/goyo.vim' " Distraction less mode
 NeoBundle 'junegunn/limelight.vim' " Hyperfocus writting
 NeoBundle 'tobyS/pdv'
 NeoBundle 'tobyS/vmustache'
+NeoBundle 'mbbill/undotree'
 
 " PHP Refactor {{
     NeoBundle 'adoy/vim-php-refactoring-toolbox'
