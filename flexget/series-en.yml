@@ -1,0 +1,6 @@
+series:
+  include: [ series-settings.yml ]
+  best:
+    - Better call Saul
+  better:
+    - Mr. Robot

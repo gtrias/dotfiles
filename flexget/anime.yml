@@ -1,0 +1,7 @@
+series:
+  include: [ series-settings.yml ]
+  anime:
+    - One Piece
+    - One Punch Man
+
+

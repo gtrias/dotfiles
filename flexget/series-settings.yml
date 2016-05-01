@@ -1,0 +1,36 @@
+settings:
+  best:
+    quality: hdtv+ <=720p !10bit
+    target: 720p
+    timeframe: 6 hours
+    propers: 12 hours
+  better:
+    quality: hdtv+ <=720p !10bit
+    target: <720p
+    timeframe: 6 hours
+    propers: 12 hours
+  average:
+    quality: hdtv+ <=720p !10bit
+    target: <720p
+    timeframe: 6 hours
+    propers: 12 hours
+  documentaries:
+    quality: hdtv+ <=720p !10bit
+    target: <720p
+    timeframe: 6 hours
+    propers: 12 hours
+  anime:
+    quality: hdtv+ <=720p !10bit
+    target: <720p
+    timeframe: 6 hours
+    propers: 12 hours
+    set:
+      path: /downloads
+      ratio: -1.0
+  japanime:
+    quality: hdtv+ <=720p !10bit
+    target: <720p
+    timeframe: 6 hours
+    propers: 12 hours
+
+

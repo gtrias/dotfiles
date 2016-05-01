@@ -1,0 +1,122 @@
+secrets: secrets.yml
+email:
+  from: '{{ secrets.email.from }}'
+  to: 
+    - genar@acs.li
+  smtp_host: '{{ secrets.email.host }}'
+  smtp_port: 25
+  smtp_username: '{{ secrets.email.login }}'
+  smtp_password: '{{ secrets.email.passwd }}'
+
+templates:
+  global:
+    transmission: 
+      host: transmission.casa.genar.me
+      port: 80
+      username: '{{ secrets.transmission.usr }}'
+      password: '{{ secrets.transmission.pwd }}'
+      # set does not work on series on current flexget version, see http://flexget.com/ticket/2270#comment:2
+      # path: "/home/elboletaire/Vídeos/Series/{{ series_name }}/{{ series_season }}a Temporada/"
+      main_file_only: yes
+      include_subs: yes
+      # content_filename: "{{ tvdb_series_name }} - {{ series_id }} {{ tvdb_ep_name | default('Unknown ep. name') }}"
+      rename_like_files: yes
+      main_file_only: yes
+      include_subs: yes
+      skip_files:
+        - '*.nfo'
+        - '*.sfv'
+        - '*[sS]ample*'
+        - '*.txt'
+
+    # Make sure there's 10GB free before adding more downloads
+    free_space:
+      path: /downloads
+      space: 10000
+    # Make sure all filenames are Windows safe (for samba)
+    pathscrub: windows
+    regexp:
+      reject:
+        - \bWEBSCR\b: {from: title}
+        - \bscreener\b: {from: title} 
+        - \bTS\b: {from: title}
+        - \bCam\b: {from: title}
+        - \bRAW\b: {from: title}
+    content_filter:
+      require:
+        - '*.avi'
+        - '*.mkv'
+        - '*.mp4'
+        - '*.m4v'
+    domain_delay:
+      elitetorrent.net: 20 seconds
+      divxtotal.com: 10 seconds
+    urlrewrite:
+      divxtotal.com:
+        regexp: 'https?:\/\/(?:www.)?divxtotal.com\/series\/torrent\/(?P<torrent>[0-9]+)\/.+'
+        format: 'http://www.divxtotal.com/download.php?id=\g<torrent>'
+    exists_series:
+      - '/downloads'
+      # - '/media/tera/Series'
+      # - '/media/tera3/Series'
+      # - '/media/tera4/Series'
+      # - '/media/terapart/Series'
+      # - '/home/elboletaire/Incoming'
+    # filesystem:
+      # path:
+        # - '/downloads'
+        # - '/media/tera3/Series'
+        # - '/media/tera4/Series'
+        # - '/media/terapart/Series'
+        # - '/home/elboletaire/Incoming'
+      # regexp: '.*\.(avi|mkv|mp4|m4v)$'
+      # recursive: yes
+
+  tv-es:
+    include: [ series-es.yml ]
+    thetvdb_lookup: yes
+    inputs:
+     - rss: http://www.divxtotal.com/rss.php
+     # - rss: http://www.newpct.com/feed/
+    html:
+      url: http://www.elitetorrent.net/categoria/4/series/pag:{{i}}
+      #url: http://www.elitetorrent.net/busqueda/Blindspot+1x/pag:{{i}}
+      increment:
+        from: 1
+        to: 10
+        step: 1
+      links_re:
+        - /torrent/.+
+      title_from: auto
+    urlrewrite:
+      elitetorrent:
+        regexp: 'http://(www.)?elitetorrent.net/torrent/(?P<id>\d+)/(?P<name>.*)'
+        format: 'http://www.elitetorrent.net/get-torrent/\g<id>'
+
+
+  # tv-en:
+    # include: [ series-en.yml ]
+    # thetvdb_lookup: yes
+    # inputs:
+      # - rss: "{{ secrets.feeds.ipt.series }}"
+      # - rss: "{{ secrets.feeds.sca.series }}"
+  anime:
+    include: [ anime.yml ]
+    thetvdb_lookup: yes
+    inputs:
+      - rss: http://feeds.feedburner.com/bittorrent
+
+tasks:
+  # Sèries Espanyoles:
+    # template: tv-es
+  # Sèries Angleses:
+    # template: tv-en
+  # Anime:
+    # template: anime
+  SeriesElitetorrent:
+    priority: 1
+    domain_delay:
+      www.elitetorrent.net: 4 seconds
+    template: tv-es
+    
+

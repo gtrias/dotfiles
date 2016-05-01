@@ -1,0 +1,5 @@
+db-config.sqlite
+.config-lock
+test-config.sqlite
+secrets.yml
+flexget.log

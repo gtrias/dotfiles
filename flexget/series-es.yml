@@ -1,0 +1,22 @@
+series:
+  include: [ series-settings.yml ]
+  better:
+    - Vikingos
+    - Vikings
+    - Gotham
+    - Juego de tronos
+    - Silicon Valley
+    - The following
+    - Mr Robot
+    - Erase una vez
+    - Sin limites
+    - The Strain
+    - Peaky Blinders
+    - Better call Saul
+    - Blindspot
+    - Heartbeat
+    - penny dreadful
+  average:
+    - Expediente X
+    - Anatomia de grey
+    - American crime
