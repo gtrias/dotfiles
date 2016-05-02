@@ -1,7 +1,7 @@
 secrets: secrets.yml
 email:
   from: '{{ secrets.email.from }}'
-  to: 
+  to:
     - genar@acs.li
   smtp_host: '{{ secrets.email.host }}'
   smtp_port: 25
@@ -10,7 +10,7 @@ email:
 
 templates:
   global:
-    transmission: 
+    transmission:
       host: transmission.casa.genar.me
       port: 80
       username: '{{ secrets.transmission.usr }}'
@@ -38,7 +38,7 @@ templates:
     regexp:
       reject:
         - \bWEBSCR\b: {from: title}
-        - \bscreener\b: {from: title} 
+        - \bscreener\b: {from: title}
         - \bTS\b: {from: title}
         - \bCam\b: {from: title}
         - \bRAW\b: {from: title}
@@ -88,6 +88,7 @@ templates:
       links_re:
         - /torrent/.+
       title_from: auto
+
     urlrewrite:
       elitetorrent:
         regexp: 'http://(www.)?elitetorrent.net/torrent/(?P<id>\d+)/(?P<name>.*)'
@@ -118,5 +119,5 @@ tasks:
     domain_delay:
       www.elitetorrent.net: 4 seconds
     template: tv-es
-    
+
 
