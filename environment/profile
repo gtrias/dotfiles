@@ -26,3 +26,5 @@ export GIT_EDITOR=vim
 
 export PATH=${PATH}:/home/genar/src/android-sdk-linux/tools
 export PATH=${PATH}:/home/genar/src/android-sdk-linux/platform-tools
+
+export PATH=~/.npm-global/bin:$PATH
