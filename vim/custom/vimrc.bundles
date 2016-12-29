@@ -74,6 +74,9 @@ NeoBundle 'junegunn/limelight.vim' " Hyperfocus writting
 NeoBundle 'tobyS/pdv'
 NeoBundle 'tobyS/vmustache'
 NeoBundle 'mbbill/undotree'
+NeoBundle 'pangloss/vim-javascript'
+NeoBundle 'mxw/vim-jsx'
+NeoBundle 'cespare/vim-toml'
 
 " PHP Refactor {{
     NeoBundle 'adoy/vim-php-refactoring-toolbox'
@@ -97,3 +100,4 @@ NeoBundle 'mbbill/undotree'
         "\ }
      "\ }
 
+let g:jsx_ext_required = 0
