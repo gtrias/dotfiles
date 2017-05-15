@@ -28,6 +28,9 @@ set smartindent
 set autoindent
 set cindent
 
+" Fixing autoreload detection
+set backupcopy=yes
+
 if has("autocmd")
   " Enable file type detection.
   " Use the default filetype settings, so that mail gets 'tw' set to 72,
