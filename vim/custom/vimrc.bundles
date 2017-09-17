@@ -79,6 +79,8 @@ NeoBundle 'tobyS/pdv'
 NeoBundle 'tobyS/vmustache'
 NeoBundle 'cespare/vim-toml'
 NeoBundle 'Valloric/YouCompleteMe'
+NeoBundle 'dhruvasagar/vim-table-mode'
+
 
 " PHP Refactor {{
     NeoBundle 'adoy/vim-php-refactoring-toolbox'

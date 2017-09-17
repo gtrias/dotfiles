@@ -29,7 +29,6 @@ export ANDROID_HOME="$HOME/Android/Sdk"
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 export PATH="$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools"
 
-eval $(thefuck --alias)
 eval "$(rbenv init -)"
 
 export LESSOPEN="| /usr/bin/source-highlight-esc.sh %s"
@@ -40,3 +39,9 @@ export HISTSIZE=10000
 export HISTFILESIZE=20000
 shopt -s histappend
 export PROMPT_COMMAND='history -a'
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+
+# added by travis gem
+[ -f /home/genar/.travis/travis.sh ] && source /home/genar/.travis/travis.sh
