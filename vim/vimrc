@@ -148,10 +148,6 @@ map <Leader> <Plug>(easymotion-prefix)
     set tags=./tags;/
 " }}
 
-" Phpunit integration
-com! -nargs=* Phpunit make -c app <q-args> | cw
-:compiler phpunit
-
 " Saving vim status on exit, per directory (Go away and come back)
 " {{
 "
