@@ -163,3 +163,6 @@ map <Leader> <Plug>(easymotion-prefix)
     endif
 " }}
 
+" JSBeautify
+map <c-f> :call JsBeautify()<cr>
+"
