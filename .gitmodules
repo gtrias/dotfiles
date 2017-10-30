@@ -36,4 +36,4 @@
 	url = https://git.acs.li/genar/scripts.git
 [submodule "awesomewm/awesome-config"]
 	path = awesomewm/awesome-config
-	url = https://github.com/prikhi/awesome-config
+	url = https://github.com/gtrias/awesome-config
