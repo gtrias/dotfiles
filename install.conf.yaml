@@ -29,7 +29,7 @@
         force: true
         # path: awesomewm/awesome-copycats/
         # path: awesomewm/powerarrow/
-        path: awesomewm/awesomeconfig/
+        path: awesomewm/awesome-config/
         # awesomewm/awesome-copycats/rc.lua: awesomewm/rc.lua
         # awesomewm/awesome-copycats/custom-rc.lua: awesomewm/custom-rc.lua
     ~/.config/mc:
