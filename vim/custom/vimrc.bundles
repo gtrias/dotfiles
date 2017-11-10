@@ -24,10 +24,13 @@ NeoBundle 'mitsuhiko/vim-jinja'
 NeoBundle 'lokaltog/vim-easymotion'
 NeoBundle 'fatih/vim-go'
 NeoBundle 'nathanaelkane/vim-indent-guides'
-NeoBundle 'w0rp/ale'
+NeoBundle 'mbbill/undotree'
+
+" Javascript
 NeoBundle 'mxw/vim-jsx'
 NeoBundle 'pangloss/vim-javascript'
-NeoBundle 'mbbill/undotree'
+NeoBundle 'w0rp/ale'
+NeoBundle 'ternjs/tern_for_vim'
 
 " Orgmode
 NeoBundle 'plasticboy/vim-markdown'

@@ -127,6 +127,10 @@ map <Leader> <Plug>(easymotion-prefix)
 " Vim indent guides confs {
     source ~/.vim/custom/indent-guides.vim
 " }
+"
+" Vim javascript stuff {
+    source ~/.vim/custom/javascript.vim
+" }
 
 " Strip trailing whitespaces and save cursor position
 " ref http://vim.wikia.com/wiki/Remove_unwanted_spaces {{
