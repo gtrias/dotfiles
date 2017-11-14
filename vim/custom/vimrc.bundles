@@ -32,6 +32,16 @@ NeoBundle 'pangloss/vim-javascript'
 NeoBundle 'w0rp/ale'
 NeoBundle 'ternjs/tern_for_vim'
 
+" Autocomplete
+if has('nvim')
+  NeoBundle 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+else
+  NeoBundle 'Shougo/deoplete.nvim'
+  NeoBundle 'roxma/nvim-yarp'
+  NeoBundle 'roxma/vim-hug-neovim-rpc'
+endif
+NeoBundle 'php-vim/phpcd.vim'
+
 " Orgmode
 NeoBundle 'plasticboy/vim-markdown'
 NeoBundle 'jceb/vim-orgmode'
@@ -45,7 +55,6 @@ NeoBundle 'groenewege/vim-less'
 NeoBundle 'vim-scripts/vim-php-namespace'
 NeoBundle 'tobyS/vmustache'
 NeoBundle 'cespare/vim-toml'
-NeoBundle 'Valloric/YouCompleteMe'
 NeoBundle 'dhruvasagar/vim-table-mode'
 NeoBundle 'Galooshi/vim-import-js'
 NeoBundle 'maksimr/vim-jsbeautify'
@@ -67,6 +76,7 @@ NeoBundle 'maksimr/vim-jsbeautify'
 " NeoBundle 'Shougo/neosnippet.vim'
 " NeoBundle 'Shougo/neosnippet-snippets'
 " NeoBundle 'Shougo/neocomplete.vim'
+" NeoBundle 'Valloric/YouCompleteMe'
 " NeoBundle 'szw/vim-tags'
 " NeoBundle 'mkusher/padawan.vim'
 " NeoBundle 'mhinz/vim-startify'
