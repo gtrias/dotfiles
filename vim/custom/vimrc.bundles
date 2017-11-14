@@ -58,6 +58,7 @@ NeoBundle 'cespare/vim-toml'
 NeoBundle 'dhruvasagar/vim-table-mode'
 NeoBundle 'Galooshi/vim-import-js'
 NeoBundle 'maksimr/vim-jsbeautify'
+NeoBundle 'vim-airline/vim-airline'
 
 " PHP Refactor {{
     NeoBundle 'adoy/vim-php-refactoring-toolbox'
