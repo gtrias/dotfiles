@@ -30,3 +30,8 @@ let g:pdv_template_dir = $HOME ."/.vim/pdv-templates"
 autocmd FileType php inoremap <C-d> <ESC>:call PhpDocSingle()<CR>i
 autocmd FileType php nnoremap <C-d> :call PhpDocSingle()<CR>
 autocmd FileType php vnoremap <C-d> :call PhpDocRange()<CR>
+
+" Preview window position
+set splitbelow
+" Autoclose preview window after selected option
+autocmd InsertLeave,CompleteDone * if pumvisible() == 0 | pclose | endif

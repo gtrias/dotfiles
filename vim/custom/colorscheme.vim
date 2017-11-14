@@ -26,3 +26,5 @@ command! Togbg call ToggleBackground()
 nnoremap <leader>b :call ToggleBackground()<CR>
 inoremap <leader>b <ESC>:call ToggleBackground()<CR>
 vnoremap <leader>b <ESC>:call ToggleBackground()<CR>
+
+let g:airline_powerline_fonts = 1
