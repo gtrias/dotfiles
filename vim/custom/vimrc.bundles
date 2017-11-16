@@ -65,6 +65,9 @@ NeoBundle 'Galooshi/vim-import-js'
 NeoBundle 'maksimr/vim-jsbeautify'
 NeoBundle 'vim-airline/vim-airline'
 
+" Session management
+NeoBundle 'vim-ctrlspace/vim-ctrlspace'
+
 " PHP Refactor {{
     NeoBundle 'adoy/vim-php-refactoring-toolbox'
     NeoBundle 'vim-php/vim-php-refactoring'

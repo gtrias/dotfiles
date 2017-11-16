@@ -3,7 +3,7 @@
 	email = genar@acs.li
 
 [core]
-	editor = vim
+	editor = nvim
 	excludesfile = /home/genar/.gitignore_global
 	compression = 0
 	safecrlf = false
