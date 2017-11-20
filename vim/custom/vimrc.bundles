@@ -53,6 +53,8 @@ NeoBundle 'jceb/vim-orgmode'
 NeoBundle 'godlygeek/tabular'
 NeoBundle 'vim-scripts/utl.vim'
 NeoBundle 'vim-scripts/SyntaxRange'
+NeoBundle 'vimwiki/vimwiki'
+NeoBundle 'tbabej/taskwiki'
 
 " Testing, to validate
 NeoBundle 'vim-scripts/todo-txt.vim'
