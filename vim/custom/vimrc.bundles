@@ -49,12 +49,10 @@ NeoBundle 'billyvg/deoplete-import-js'
 
 " Orgmode
 NeoBundle 'plasticboy/vim-markdown'
-NeoBundle 'jceb/vim-orgmode'
 NeoBundle 'godlygeek/tabular'
 NeoBundle 'vim-scripts/utl.vim'
 NeoBundle 'vim-scripts/SyntaxRange'
 NeoBundle 'vimwiki/vimwiki'
-NeoBundle 'tbabej/taskwiki'
 
 " Testing, to validate
 NeoBundle 'vim-scripts/todo-txt.vim'
@@ -121,5 +119,8 @@ NeoBundle 'vim-ctrlspace/vim-ctrlspace'
 " NeoBundle 'Wutzara/vim-materialtheme'
 " NeoBundle 'sjl/gundo.vim'
 " NeoBundle 'edsono/vim-matchit'
+" NeoBundle 'teranex/vimwiki-tasks'
+" NeoBundle 'tbabej/taskwiki'
+" NeoBundle 'jceb/vim-orgmode'
 
 let g:jsx_ext_required = 0
