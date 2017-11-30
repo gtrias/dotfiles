@@ -30,6 +30,7 @@ NeoBundle 'mxw/vim-jsx'
 NeoBundle 'pangloss/vim-javascript'
 NeoBundle 'w0rp/ale'
 NeoBundle 'ternjs/tern_for_vim'
+NeoBundle 'Galooshi/vim-import-js'
 
 " GIT
 NeoBundle 'tpope/vim-fugitive'
@@ -55,6 +56,9 @@ NeoBundle 'vim-scripts/utl.vim'
 NeoBundle 'vim-scripts/SyntaxRange'
 NeoBundle 'vimwiki/vimwiki'
 NeoBundle 'tbabej/taskwiki'
+NeoBundle 'powerman/vim-plugin-AnsiEsc'
+NeoBundle 'majutsushi/tagbar'
+NeoBundle 'farseer90718/vim-taskwarrior'
 
 " Testing, to validate
 NeoBundle 'vim-scripts/todo-txt.vim'
@@ -63,7 +67,6 @@ NeoBundle 'vim-scripts/vim-php-namespace'
 NeoBundle 'tobyS/vmustache'
 NeoBundle 'cespare/vim-toml'
 NeoBundle 'dhruvasagar/vim-table-mode'
-NeoBundle 'Galooshi/vim-import-js'
 NeoBundle 'maksimr/vim-jsbeautify'
 NeoBundle 'vim-airline/vim-airline'
 
@@ -114,7 +117,6 @@ NeoBundle 'vim-ctrlspace/vim-ctrlspace'
 " NeoBundle 'vim-scripts/utl.vim'
 " NeoBundle 'mattn/gist-vim'
 " NeoBundle 'scrooloose/syntastic' " No compatible with ale
-" NeoBundle 'majutsushi/tagbar'
 " NeoBundle 'Lokaltog/powerline',{'rtp': 'powerline/bindings/vim/'}
 " NeoBundle 'chriskempson/vim-tomorrow-theme'
 " NeoBundle 'violetyk/cake.vim'
