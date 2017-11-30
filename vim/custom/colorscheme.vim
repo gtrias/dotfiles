@@ -9,7 +9,8 @@ let g:solarized_termcolors=256
 " colorscheme solarized
 " colorscheme materialtheme
 " colorscheme kkruby
-colorscheme radicalgoodspeed
+" colorscheme radicalgoodspeed
+colorscheme gruvbox
 set background=dark
 
 " solarized toggle background
