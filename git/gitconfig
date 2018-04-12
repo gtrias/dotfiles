@@ -15,7 +15,7 @@
 	tool = diffconflicts
 
 [mergetool "diffconflicts"]
-	cmd = diffconflicts vim $BASE $LOCAL $REMOTE $MERGED
+	cmd = diffconflicts nvim $BASE $LOCAL $REMOTE $MERGED
 	trustExitCode = true
 
 [mergetool]
@@ -25,7 +25,7 @@
 	default = current
 
 [diff]
-	tool = vimdiff
+	tool = nvimdiff
 
 [difftool]
     prompt = false

@@ -6,5 +6,12 @@ tnoremap <Esc> <C-\><C-n>
 
 let g:CtrlSpaceDefaultMappingKey = "<C-space> "
 
-" Nerdtree toggle
 nmap <C-e> :NERDTreeToggle<cr>
+
+" Tab navigation like Firefox.
+nnoremap <C-S-tab> :tabprevious<CR>
+nnoremap <C-tab>   :tabnext<CR>
+nnoremap <C-t>     :tabnew<CR>
+inoremap <C-S-tab> <Esc>:tabprevious<CR>i
+inoremap <C-tab>   <Esc>:tabnext<CR>i
+inoremap <C-t>     <Esc>:tabnew<CR>

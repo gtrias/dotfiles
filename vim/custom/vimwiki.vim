@@ -3,3 +3,4 @@ let g:vimwiki_list = [
             \ {'path': '~/src/genar.me/source','syntax': 'markdown', 'ext': '.md'}
             \ ]
 let g:vimwiki_folding = 'expr'
+autocmd FileType markdown setlocal shiftwidth=2
