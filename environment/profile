@@ -22,7 +22,6 @@ if [ -d "$HOME/bin" ] ; then
 fi
 
 export PATH="$HOME/go/bin:$PATH"
-export GIT_EDITOR=vim
 
 export PATH=${PATH}:/home/genar/src/android-sdk-linux/tools
 export PATH=${PATH}:/home/genar/src/android-sdk-linux/platform-tools
