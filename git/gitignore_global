@@ -5,7 +5,6 @@
 tags
 .vimrc.project
 .DS_Store
-.editorconfig
 
 .phpcomplete_extended
 .idea/*
