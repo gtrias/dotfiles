@@ -10,7 +10,7 @@ NeoBundle 'dracula/vim'
 NeoBundle 'scrooloose/nerdtree'
 NeoBundle 'chase/vim-ansible-yaml'
 NeoBundle 'evidens/vim-twig'
-NeoBundle 'kien/ctrlp.vim'
+NeoBundle 'ctrlpvim/ctrlp.vim'
 NeoBundle 'editorconfig/editorconfig-vim'
 NeoBundle 'ekalinin/Dockerfile.vim'
 NeoBundle 'mitsuhiko/vim-jinja'
@@ -25,6 +25,10 @@ NeoBundle 'pangloss/vim-javascript'
 NeoBundle 'w0rp/ale'
 NeoBundle 'ternjs/tern_for_vim'
 NeoBundle 'Galooshi/vim-import-js'
+" NeoBundleLazy 'flowtype/vim-flow', {
+            " \ 'autoload': {
+            " \     'filetypes': 'javascript'
+            " \ }}
 
 " Safe working
 NeoBundle 'soywod/vim-keepeye'
