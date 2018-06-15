@@ -3,7 +3,10 @@
 
 NeoBundleFetch 'Shougo/neobundle.vim'
 
+" Color themes
 NeoBundle 'flazz/vim-colorschemes'
+NeoBundle 'dracula/vim'
+
 NeoBundle 'scrooloose/nerdtree'
 NeoBundle 'chase/vim-ansible-yaml'
 NeoBundle 'evidens/vim-twig'
@@ -22,6 +25,9 @@ NeoBundle 'pangloss/vim-javascript'
 NeoBundle 'w0rp/ale'
 NeoBundle 'ternjs/tern_for_vim'
 NeoBundle 'Galooshi/vim-import-js'
+
+" Safe working
+NeoBundle 'soywod/vim-keepeye'
 
 " GIT
 NeoBundle 'tpope/vim-fugitive'

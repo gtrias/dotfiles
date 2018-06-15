@@ -31,7 +31,7 @@
     prompt = false
 
 [init]
-	templatedir = ~/dotfiles/gittemplate
+	templatedir = ~/dotfiles/git/gittemplate
 
 [color]
 	ui = true
