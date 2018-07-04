@@ -45,3 +45,9 @@ export NVM_DIR="$HOME/.nvm"
 
 # added by travis gem
 [ -f /home/genar/.travis/travis.sh ] && source /home/genar/.travis/travis.sh
+
+# Ask ssh password once
+if [ -z "$SSH_AUTH_SOCK" ] ; then
+  eval `ssh-agent -s`
+  ssh-add
+fi
