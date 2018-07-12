@@ -3,6 +3,7 @@
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
     - [exec fonts/fonts/install.sh, Installing Powerline Fonts]
+    - [exec scripts/gitsemver.sh]
     #- [exec scripts/compile-vim-with-lua.sh/vim74_lua]
 
 - link:
