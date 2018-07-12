@@ -17,6 +17,10 @@
     ~/.zshrc: zsh/zshrc
     ~/.bash_it: bash/bash-it
     ~/.bashrc: bash/bashrc
+    ~/.git-semver/config:
+        force: true
+        create: true
+        path: gitsemverconf/config
     ~/.vim/bundle/neobundle.vim:
         force: true
         create: true
