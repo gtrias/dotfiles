@@ -25,6 +25,7 @@ NeoBundle 'pangloss/vim-javascript'
 NeoBundle 'w0rp/ale'
 NeoBundle 'ternjs/tern_for_vim'
 NeoBundle 'Galooshi/vim-import-js'
+NeoBundle 'leafgarland/typescript-vim'
 " NeoBundleLazy 'flowtype/vim-flow', {
             " \ 'autoload': {
             " \     'filetypes': 'javascript'
