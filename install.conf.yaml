@@ -17,6 +17,7 @@
     ~/.zshrc: zsh/zshrc
     ~/.bash_it: bash/bash-it
     ~/.bashrc: bash/bashrc
+    ~/.config/Code/User: vscode
     ~/.git-semver/config:
         force: true
         create: true
