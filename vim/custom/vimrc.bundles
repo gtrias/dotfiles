@@ -34,6 +34,11 @@ NeoBundle 'billyvg/deoplete-import-js'
             " \     'filetypes': 'javascript'
             " \ }}
 
+" Typescript
+NeoBundle 'leafgarland/typescript-vim'
+NeoBundle 'HerringtonDarkholme/yats.vim'
+NeoBundle 'mhartington/nvim-typescript', {'do': './install.sh'}
+
 " Safe working
 NeoBundle 'soywod/vim-keepeye'
 
