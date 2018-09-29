@@ -26,6 +26,9 @@ NeoBundle 'w0rp/ale'
 NeoBundle 'ternjs/tern_for_vim'
 NeoBundle 'Galooshi/vim-import-js'
 NeoBundle 'leafgarland/typescript-vim'
+NeoBundle 'ruanyl/vim-fixmyjs'
+NeoBundle 'Galooshi/vim-import-js', { 'do': 'npm install -g import-js' }
+NeoBundle 'billyvg/deoplete-import-js'
 " NeoBundleLazy 'flowtype/vim-flow', {
             " \ 'autoload': {
             " \     'filetypes': 'javascript'
@@ -47,8 +50,6 @@ else
 endif
 NeoBundle 'php-vim/phpcd.vim'
 NeoBundle 'carlitux/deoplete-ternjs', { 'build': { 'mac': 'npm install -g tern', 'unix': 'npm install -g tern' }}
-NeoBundle 'Galooshi/vim-import-js', { 'do': 'npm install -g import-js' }
-NeoBundle 'billyvg/deoplete-import-js'
 
 " Orgmode
 NeoBundle 'plasticboy/vim-markdown'
