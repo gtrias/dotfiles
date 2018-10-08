@@ -1,6 +1,7 @@
 [user]
 	name = Genar Trias Ortiz
 	email = genar@acs.li
+	signingkey = 67DE0B445B865A19
 
 [core]
 	editor = nvim
@@ -43,3 +44,7 @@
 
 # [http]
 # proxy = 127.0.0.1:3128
+[commit]
+	gpgsign = true
+[gpg]
+	program = gpg2

@@ -183,3 +183,7 @@ map <Leader> <Plug>(easymotion-prefix)
 " JSBeautify
 map <c-f> :call JsBeautify()<cr>
 "
+"
+" Trying to fix weird character cursor
+let $NVIM_TUI_ENABLE_CURSOR_SHAPE = 0
+set guicursor=
