@@ -72,10 +72,10 @@ NeoBundle 'godlygeek/tabular'
 NeoBundle 'vim-scripts/utl.vim'
 NeoBundle 'vim-scripts/SyntaxRange'
 NeoBundle 'vimwiki/vimwiki'
-NeoBundle 'tbabej/taskwiki'
+" NeoBundle 'tbabej/taskwiki'
 NeoBundle 'powerman/vim-plugin-AnsiEsc'
 NeoBundle 'majutsushi/tagbar'
-NeoBundle 'farseer90718/vim-taskwarrior'
+" NeoBundle 'farseer90718/vim-taskwarrior'
 
 " Testing, to validate
 NeoBundle 'vim-scripts/todo-txt.vim'

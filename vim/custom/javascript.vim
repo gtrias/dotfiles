@@ -14,3 +14,5 @@ let b:ale_fixers = {
 let b:ale_linters_ignore = ['tsserver']
 let g:ale_fix_on_save = 1
 set autoread
+
+let g:flow#autoclose = 1
