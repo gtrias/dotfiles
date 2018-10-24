@@ -23,7 +23,6 @@ NeoBundle 'mbbill/undotree'
 NeoBundle 'mxw/vim-jsx'
 NeoBundle 'pangloss/vim-javascript'
 NeoBundle 'w0rp/ale'
-NeoBundle 'ternjs/tern_for_vim'
 NeoBundle 'Galooshi/vim-import-js'
 NeoBundle 'leafgarland/typescript-vim'
 NeoBundle 'ruanyl/vim-fixmyjs'
@@ -73,10 +72,10 @@ NeoBundle 'godlygeek/tabular'
 NeoBundle 'vim-scripts/utl.vim'
 NeoBundle 'vim-scripts/SyntaxRange'
 NeoBundle 'vimwiki/vimwiki'
-NeoBundle 'tbabej/taskwiki'
+" NeoBundle 'tbabej/taskwiki'
 NeoBundle 'powerman/vim-plugin-AnsiEsc'
 NeoBundle 'majutsushi/tagbar'
-NeoBundle 'farseer90718/vim-taskwarrior'
+" NeoBundle 'farseer90718/vim-taskwarrior'
 
 " Testing, to validate
 NeoBundle 'vim-scripts/todo-txt.vim'
@@ -137,5 +136,6 @@ NeoBundle 'vim-ctrlspace/vim-ctrlspace'
 " NeoBundle 'teranex/vimwiki-tasks'
 " NeoBundle 'tbabej/taskwiki'
 " NeoBundle 'jceb/vim-orgmode'
+" NeoBundle 'ternjs/tern_for_vim' <- unmantained
 
 let g:jsx_ext_required = 0
