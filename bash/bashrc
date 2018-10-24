@@ -35,6 +35,8 @@ eval "$(rbenv init -)"
 export LESSOPEN="| /usr/bin/source-highlight-esc.sh %s"
 export LESS='-R '
 
+export VISUAL="vim"
+
 # Bigger history
 export HISTSIZE=10000
 export HISTFILESIZE=20000
