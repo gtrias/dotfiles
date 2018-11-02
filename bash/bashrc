@@ -54,3 +54,6 @@ if [ -z "$SSH_AUTH_SOCK" ] ; then
   eval `ssh-agent -s`
   ssh-add
 fi
+
+export GEM_HOME=$(ruby -e 'print Gem.user_dir')
+export PATH="$HOME/.rbenv/bin:$PATH"

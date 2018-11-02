@@ -19,6 +19,11 @@ NeoBundle 'fatih/vim-go'
 NeoBundle 'nathanaelkane/vim-indent-guides'
 NeoBundle 'mbbill/undotree'
 
+" Ruby
+NeoBundle 'tpope/vim-bundler'
+NeoBundle 'tpope/vim-rails'
+NeoBundle 'vim-ruby/vim-ruby'
+
 " Javascript
 NeoBundle 'mxw/vim-jsx'
 NeoBundle 'pangloss/vim-javascript'
