@@ -162,7 +162,7 @@ map <Leader> <Plug>(easymotion-prefix)
 
 
 " Tag file loading {{
-    set tags=./tags;/
+    set tags=./tags,/ruby/lib/tags
 " }}
 
 " Saving vim status on exit, per directory (Go away and come back)
