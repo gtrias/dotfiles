@@ -37,6 +37,9 @@
 [color]
 	ui = true
 
+[pull]
+    rebase = true
+
 [alias]
     pull-up = "!f() { git pull && git submodule update --init --recursive && git submodule status; }; f"
     lol = log --graph --decorate --pretty=oneline --abbrev-commit
