@@ -144,6 +144,10 @@ map <Leader> <Plug>(easymotion-prefix)
 " Vim ctrlspace stuff {
     source ~/.vim/custom/vimwiki.vim
 " }
+
+" Vim fzf stuff {
+    source ~/.vim/custom/fzf.vim
+" }
 "
 " Strip trailing whitespaces and save cursor position
 " ref http://vim.wikia.com/wiki/Remove_unwanted_spaces {{

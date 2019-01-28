@@ -25,6 +25,9 @@
 [push]
 	default = current
 
+[pull]
+	rebase = true
+
 [diff]
 	tool = nvimdiff
 
@@ -47,7 +50,7 @@
 
 # [http]
 # proxy = 127.0.0.1:3128
-[commit]
-	gpgsign = true
-[gpg]
-	program = gpg2
+# [commit]
+# gpgsign = true
+# [gpg]
+# program = gpg2

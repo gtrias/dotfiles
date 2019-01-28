@@ -10,7 +10,9 @@ NeoBundle 'dracula/vim'
 NeoBundle 'scrooloose/nerdtree'
 NeoBundle 'chase/vim-ansible-yaml'
 NeoBundle 'evidens/vim-twig'
-NeoBundle 'ctrlpvim/ctrlp.vim'
+" NeoBundle 'ctrlpvim/ctrlp.vim'
+NeoBundle 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+NeoBundle 'junegunn/fzf.vim'
 NeoBundle 'editorconfig/editorconfig-vim'
 NeoBundle 'ekalinin/Dockerfile.vim'
 NeoBundle 'mitsuhiko/vim-jinja'
@@ -23,6 +25,7 @@ NeoBundle 'mbbill/undotree'
 NeoBundle 'tpope/vim-bundler'
 NeoBundle 'tpope/vim-rails'
 NeoBundle 'vim-ruby/vim-ruby'
+NeoBundle 'ngmy/vim-rubocop'
 
 " Javascript
 NeoBundle 'mxw/vim-jsx'
