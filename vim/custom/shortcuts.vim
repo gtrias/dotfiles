@@ -9,16 +9,16 @@ let g:CtrlSpaceDefaultMappingKey = "<C-space> "
 nmap <C-e> :NERDTreeToggle<cr>
 
 " Tab navigation like Firefox.
-nnoremap <C-S-tab> :tabprevious<CR>
-nnoremap <C-tab>   :tabnext<CR>
+nnoremap <C-S-Tab> :tabprevious<CR>
+nnoremap <C-Tab>   :tabnext<CR>
 nnoremap <C-t>     :tabnew<CR>
-inoremap <C-S-tab> <Esc>:tabprevious<CR>i
-inoremap <C-tab>   <Esc>:tabnext<CR>i
+nnoremap <M>       /[A-Z]<CR>
+inoremap <C-S-Tab> <Esc>:tabprevious<CR>i
+inoremap <C-Tab>   <Esc>:tabnext<CR>i
 inoremap <C-t>     <Esc>:tabnew<CR>
 
 " Project grep
 nnoremap <leader>g :ProjectRootExe grep<space>
-
 
 function! s:TmuxBufferName()
     let l:list = systemlist('tmux list-buffers -F"#{buffer_name}"')
@@ -76,4 +76,5 @@ call s:Enable()
 " endif
 " silent! call system('tmux loadb -',l:s)
 
-
+" Clear prev search
+nnoremap <esc><esc> :noh<return><esc>
