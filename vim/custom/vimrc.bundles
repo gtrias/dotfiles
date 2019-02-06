@@ -26,6 +26,8 @@ NeoBundle 'tpope/vim-bundler'
 NeoBundle 'tpope/vim-rails'
 NeoBundle 'vim-ruby/vim-ruby'
 NeoBundle 'ngmy/vim-rubocop'
+NeoBundle 'dbakker/vim-projectroot'
+NeoBundle 'hackhowtofaq/vim-solargraph'
 
 " Javascript
 NeoBundle 'mxw/vim-jsx'
@@ -46,9 +48,6 @@ NeoBundleLazy 'flowtype/vim-flow', {
             \ 'autoload': {
             \     'filetypes': 'javascript'
             \ }}
-
-" Safe working
-NeoBundle 'soywod/vim-keepeye'
 
 " GIT
 NeoBundle 'tpope/vim-fugitive'
