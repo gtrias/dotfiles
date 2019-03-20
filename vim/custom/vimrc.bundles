@@ -10,7 +10,7 @@ NeoBundle 'dracula/vim'
 NeoBundle 'scrooloose/nerdtree'
 NeoBundle 'chase/vim-ansible-yaml'
 NeoBundle 'evidens/vim-twig'
-" NeoBundle 'ctrlpvim/ctrlp.vim'
+NeoBundle 'ctrlpvim/ctrlp.vim'
 NeoBundle 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 NeoBundle 'junegunn/fzf.vim'
 NeoBundle 'editorconfig/editorconfig-vim'
@@ -37,6 +37,7 @@ NeoBundle 'Galooshi/vim-import-js'
 NeoBundle 'ruanyl/vim-fixmyjs'
 NeoBundle 'Galooshi/vim-import-js', { 'do': 'npm install -g import-js' }
 NeoBundle 'billyvg/deoplete-import-js'
+NeoBundle 'heavenshell/vim-jsdoc'
 
 " Typescript
 NeoBundle 'leafgarland/typescript-vim'
