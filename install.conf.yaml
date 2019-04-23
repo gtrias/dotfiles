@@ -17,6 +17,7 @@
     ~/.zshrc: zsh/zshrc
     ~/.bash_it: bash/bash-it
     ~/.bashrc: bash/bashrc
+    ~/.config/i3/config: i3/config
     ~/.config/Code/User: vscode
     ~/.git-semver/config:
         force: true

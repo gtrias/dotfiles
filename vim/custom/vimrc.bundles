@@ -29,6 +29,10 @@ NeoBundle 'ngmy/vim-rubocop'
 NeoBundle 'dbakker/vim-projectroot'
 NeoBundle 'hackhowtofaq/vim-solargraph'
 
+" Elixir
+NeoBundle 'elixir-editors/vim-elixir'
+NeoBundle 'slashmili/alchemist.vim'
+
 " Javascript
 NeoBundle 'mxw/vim-jsx'
 NeoBundle 'pangloss/vim-javascript'

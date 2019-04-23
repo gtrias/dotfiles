@@ -29,6 +29,7 @@ export ANDROID_HOME="$HOME/Android/Sdk"
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 export PATH="$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools"
 export PATH="$PATH:$HOME/bin"
+export PATH="$PATH:$HOME/.cargo/env"
 
 eval "$(rbenv init -)"
 
