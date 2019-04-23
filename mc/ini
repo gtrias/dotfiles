@@ -86,6 +86,8 @@ select_flags=6
 
 editor_state_full_filename=false
 
+safe_overwrite=false
+
 [Layout]
 message_visible=1
 keybar_visible=1
@@ -96,7 +98,7 @@ menubar_visible=1
 free_space=1
 horizontal_split=0
 vertical_equal=1
-left_panel_size=79
+left_panel_size=41
 horizontal_equal=1
 top_panel_size=1
 
@@ -116,6 +118,8 @@ clipboard_paste=
 base_color=
 xterm=
 color_terminals=
+
+xterm-256color=
 
 [Panels]
 show_mini_info=true
