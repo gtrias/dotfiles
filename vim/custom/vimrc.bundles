@@ -27,7 +27,6 @@ NeoBundle 'tpope/vim-rails'
 NeoBundle 'vim-ruby/vim-ruby'
 NeoBundle 'ngmy/vim-rubocop'
 NeoBundle 'dbakker/vim-projectroot'
-NeoBundle 'hackhowtofaq/vim-solargraph'
 
 " Elixir
 NeoBundle 'elixir-editors/vim-elixir'
@@ -44,9 +43,9 @@ NeoBundle 'billyvg/deoplete-import-js'
 NeoBundle 'heavenshell/vim-jsdoc'
 
 " Typescript
-NeoBundle 'leafgarland/typescript-vim'
+" NeoBundle 'leafgarland/typescript-vim'
 NeoBundle 'HerringtonDarkholme/yats.vim'
-NeoBundle 'mhartington/nvim-typescript', {'do': './install.sh'}
+" NeoBundle 'mhartington/nvim-typescript', {'do': './install.sh'}
 
 " Flow
 NeoBundleLazy 'flowtype/vim-flow', {
@@ -58,14 +57,7 @@ NeoBundleLazy 'flowtype/vim-flow', {
 NeoBundle 'tpope/vim-fugitive'
 
 " Autocomplete
-if has('nvim')
-  NeoBundle 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-else
-  NeoBundle 'Shougo/deoplete.nvim'
-  NeoBundle 'roxma/nvim-yarp'
-  NeoBundle 'roxma/vim-hug-neovim-rpc'
-endif
-NeoBundle 'carlitux/deoplete-ternjs', { 'build': { 'mac': 'npm install -g tern', 'unix': 'npm install -g tern' }}
+NeoBundle 'neoclide/coc.nvim', 'release'
 
 " PHP
 NeoBundle 'php-vim/phpcd.vim'
@@ -148,5 +140,14 @@ NeoBundle 'vim-ctrlspace/vim-ctrlspace'
 " NeoBundle 'tbabej/taskwiki'
 " NeoBundle 'jceb/vim-orgmode'
 " NeoBundle 'ternjs/tern_for_vim' <- unmantained
+"
+" if has('nvim')
+"   NeoBundle 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+" else
+"   NeoBundle 'Shougo/deoplete.nvim'
+"   NeoBundle 'roxma/nvim-yarp'
+"   NeoBundle 'roxma/vim-hug-neovim-rpc'
+" endif
+" NeoBundle 'carlitux/deoplete-ternjs', { 'build': { 'mac': 'npm install -g tern', 'unix': 'npm install -g tern' }}
 
 let g:jsx_ext_required = 0
