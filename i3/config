@@ -13,7 +13,7 @@ font xft:URWGothic-Book 11
 
 floating_modifier $mod
 
-bindsym $mod+Return exec i3-sensible-terminal
+bindsym $mod+Return exec terminator
 
 # Window kill command
 bindsym $mod+Shift+q kill
@@ -209,7 +209,7 @@ mode "resize" {
 # Autostart applications
 exec --no-startup-id nitrogen --restore; sleep 1; compton -b
 exec --no-startup-id nm-applet
-exec --no-startup-id xfce4-power-manager
+# exec --no-startup-id xfce4-power-manager
 exec --no-startup-id pamac-tray
 exec --no-startup-id clipit
 exec_always --no-startup-id ff-theme-util
@@ -217,13 +217,13 @@ exec_always --no-startup-id fix_xcursor
 exec_always --no-startup-id /$HOME/.config/polybar/i3wmthemer_bar_launch.sh
 
 # Theme colors
-client.focused #b0c4bb #2f2f38 #b0c4bb #81a2be #81a2be
-client.focused_inactive #b0c4bb #2f2f38 #b0c4bb #688486 #688486
-client.unfocused #b0c4bb #2f2f38 #b0c4bb #688486 #688486
-client.urgent #b0c4bb #2f2f38 #b0c4bb #688486 #688486
-client.placeholder #b0c4bb #2f2f38 #b0c4bb #688486 #688486
+client.focused          #272827 #272827 #657b83 #272827 #272827
+client.focused_inactive #272827 #272827 #657b83 #272827 #272827
+client.unfocused        #272827 #272827 #657b83 #272827 #272827
+client.urgent           #272827 #272827 #657b83 #272827 #272827
+client.placeholder      #272827 #272827 #657b83 #272827 #272827
 
-client.background #2f2f38
+client.background       #272827
 
 # Gaps
 gaps inner 10
@@ -267,3 +267,14 @@ mode "$mode_gaps_outer" {
         bindsym Return mode "default"
         bindsym Escape mode "default"
 }
+
+# set power-manager and volume control
+exec --no-startup-id mate-power-manager
+
+bindsym XF86AudioRaiseVolume exec --no-startup-id amixer -c 0 -q set Master 2dB+ unmute
+bindsym XF86AudioLowerVolume exec --no-startup-id amixer -c 0 -q set Master 2db- unmute
+bindsym XF86AudioMute exec --no-startup-id amixer -q set Master toggle
+
+# touchpad on and off controller on laptop with Fn+<touchpad control functional key>
+bindsym XF86TouchpadOn exec --no-startup-id synclient Touchpadoff=0
+bindsym XF86TouchpadOff exec --no-startup-id synclient Touchpadoff=1

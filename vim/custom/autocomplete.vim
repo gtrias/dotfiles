@@ -35,6 +35,3 @@ autocmd FileType php vnoremap <C-d> :call PhpDocRange()<CR>
 set splitbelow
 " Autoclose preview window after selected option
 autocmd InsertLeave,CompleteDone * if pumvisible() == 0 | pclose | endif
-
-" Importjs
-let g:deoplete_import_js#bin = 'importjs'

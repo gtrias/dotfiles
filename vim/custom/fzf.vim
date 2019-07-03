@@ -8,7 +8,7 @@
 " map m /[A-Z]<cr><esc>:noh<return>a
 
 nnoremap <leader><space> :GFiles<cr>
-nnoremap <leader>g :GGrep<cr>
+" nnoremap <leader>g :GGrep<cr>
 " nnoremap <leader>b :FZZZFBuffers<cr>
 " nnoremap <leader>t :TestNearest<cr>
 " nnoremap <leader>o :only<cr>
