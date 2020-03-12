@@ -11,7 +11,11 @@
     ~/.gitconfig : git/gitconfig
     ~/.gitignore_global: git/gitignore_global
     ~/.vimrc: vim/vimrc
-    ~/.vim/custom: vim/custom/
+    ~/.config/nvim/init.vim: vim/init.vim
+    ~/.vim/custom: 
+      create: true
+      force: true
+      path: vim/custom/
     ~/.profile: environment/profile
     ~/.alias.common.sh: shells-common/alias.common.sh
     ~/.zshrc: zsh/zshrc
