@@ -79,9 +79,10 @@ NeoBundle 'plasticboy/vim-markdown'
 NeoBundle 'godlygeek/tabular'
 NeoBundle 'vim-scripts/utl.vim'
 NeoBundle 'vim-scripts/SyntaxRange'
-NeoBundle 'vimwiki/vimwiki'
+NeoBundle 'vimwiki/vimwiki', { 'rev': 'dev' }
 " NeoBundle 'tbabej/taskwiki'
 NeoBundle 'powerman/vim-plugin-AnsiEsc'
+NeoBundle 'michal-h21/vim-zettel'
 NeoBundle 'majutsushi/tagbar'
 " NeoBundle 'farseer90718/vim-taskwarrior'
 

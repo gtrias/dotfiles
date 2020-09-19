@@ -27,7 +27,7 @@ modules-left = i3
 modules-center = date
 modules-right = wlan eth powermenu
 
-tray-position =
+tray-position = right
 ;tray-padding =
 wm-restack = i3
 override-redirect = true

@@ -1,7 +1,7 @@
 [user]
 	name = Genar Trias Ortiz
 	email = genar@acs.li
-	signingkey = 67DE0B445B865A19
+	signingkey = 7D2A12F961613EFB3A4F4D7090039FB4A50F9BBA
 
 [core]
 	editor = nvim
@@ -54,4 +54,4 @@
     gpgsign = true
 
 [gpg]
-    program = gpg2
+	program = gpg2
