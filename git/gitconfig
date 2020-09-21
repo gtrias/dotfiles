@@ -41,17 +41,17 @@
 	ui = true
 
 [pull]
-    rebase = true
+  rebase = true
 
 [alias]
-    pull-up = "!f() { git pull && git submodule update --init --recursive && git submodule status; }; f"
-    lol = log --graph --decorate --pretty=oneline --abbrev-commit
-    lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
+  pull-up = "!f() { git pull && git submodule update --init --recursive && git submodule status; }; f"
+  lol = log --graph --decorate --pretty=oneline --abbrev-commit
+  lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
 
 # [http]
 # proxy = 127.0.0.1:3128
 [commit]
-    gpgsign = true
+  gpgsign = false
 
 [gpg]
 	program = gpg2

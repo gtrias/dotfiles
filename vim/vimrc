@@ -21,9 +21,7 @@ set foldlevel=1
 
 " Indent settings
 set expandtab
-set tabstop=4
-set shiftwidth=4
-set softtabstop=4
+set tabstop=2 shiftwidth=2 softtabstop=2
 set smartindent
 set autoindent
 set cindent
@@ -95,7 +93,6 @@ autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
     set undodir=~/.vim/.vimundo/
 " }
 
-autocmd FileType php setlocal omnifunc=phpcomplete_extended#CompletePHP
 
 " vim easymotion
 map <Leader> <Plug>(easymotion-prefix)
@@ -103,10 +100,6 @@ map <Leader> <Plug>(easymotion-prefix)
 " Loading external configs
 " Syntastic prefs {
     source ~/.vim/custom/syntastic.vim
-" }
-
-" Vim Symfony (https://github.com/docteurklein/vim-symfony) {
-    source ~/.vim/custom/vim-symfony.vim
 " }
 
 " Vim Solarized settings {
@@ -147,6 +140,10 @@ map <Leader> <Plug>(easymotion-prefix)
 
 " Vim fzf stuff {
     source ~/.vim/custom/fzf.vim
+" }
+"
+" vim-test stuff {
+    source ~/.vim/custom/vim-test.vim
 " }
 "
 " Strip trailing whitespaces and save cursor position

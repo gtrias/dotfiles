@@ -20,6 +20,12 @@ inoremap <C-t>     <Esc>:tabnew<CR>
 " Project grep
 nnoremap <leader>g :ProjectRootExe grep<space>
 
+" escape alias
+inoremap jj <esc>
+inoremap jJ <esc>
+inoremap Jj <esc>
+inoremap JJ <esc>
+
 function! s:TmuxBufferName()
     let l:list = systemlist('tmux list-buffers -F"#{buffer_name}"')
     if len(l:list)==0
@@ -78,3 +84,9 @@ call s:Enable()
 
 " Clear prev search
 nnoremap <esc><esc> :noh<return><esc>
+
+
+" Run tests
+nnoremap <silent> <leader>t :w<BAR>:TestFile<CR>
+nnoremap <silent> <leader>T :w<BAR>:TestNearest<CR>
+nnoremap <silent> <leader>a :TestSuite<CR>
