@@ -30,10 +30,10 @@
 	url = https://github.com/sorin-ionescu/prezto.git
 [submodule "sshconf"]
 	path = sshconf
-	url = https://git.acs.li/genar/sshconf.git
+	url = https://gitlab.com/gtrias/sshconf.git
 [submodule "private-scripts"]
 	path = private-scripts
-	url = https://git.acs.li/genar/scripts.git
+	url = https://gitlab.com/gtrias/sshconf.git
 [submodule "awesomewm/awesome-config"]
 	path = awesomewm/awesome-config
 	url = https://github.com/gtrias/awesome-config
