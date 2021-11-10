@@ -1,7 +1,7 @@
 " Genar Vim Settings
 
 " Changing leader key to ,
-let mapleader=","
+let mapleader=" "
 
 " General settings
 syntax enable

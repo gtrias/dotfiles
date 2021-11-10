@@ -1,14 +1,19 @@
 " Enabled bundles list
-"
 
 NeoBundleFetch 'Shougo/neobundle.vim'
+
+"  Lua
+NeoBundle 'wbthomason/packer.nvim'
 
 " Color themes
 NeoBundle 'flazz/vim-colorschemes'
 NeoBundle 'dracula/vim'
 
-" Utils
+" File explore
 NeoBundle 'scrooloose/nerdtree'
+NeoBundle 'ryanoasis/vim-devicons'
+
+" Utils
 NeoBundle 'chase/vim-ansible-yaml'
 NeoBundle 'evidens/vim-twig'
 NeoBundle 'ctrlpvim/ctrlp.vim'
@@ -38,14 +43,15 @@ NeoBundle 'elixir-editors/vim-elixir'
 NeoBundle 'slashmili/alchemist.vim'
 
 " Javascript
+NeoBundle 'neovim/nvim-lspconfig'
 NeoBundle 'mxw/vim-jsx'
-NeoBundle 'pangloss/vim-javascript'
-NeoBundle 'w0rp/ale'
-NeoBundle 'Galooshi/vim-import-js'
-NeoBundle 'ruanyl/vim-fixmyjs'
-NeoBundle 'Galooshi/vim-import-js', { 'do': 'npm install -g import-js' }
+" NeoBundle 'pangloss/vim-javascript'
+" NeoBundle 'w0rp/ale'
+" NeoBundle 'Galooshi/vim-import-js'
+" NeoBundle 'ruanyl/vim-fixmyjs'
+" NeoBundle 'Galooshi/vim-import-js', { 'do': 'npm install -g import-js' }
 " NeoBundle 'billyvg/deoplete-import-js'
-NeoBundle 'heavenshell/vim-jsdoc'
+" NeoBundle 'heavenshell/vim-jsdoc'
 
 " Typescript
 " NeoBundle 'leafgarland/typescript-vim'
@@ -62,7 +68,7 @@ NeoBundleLazy 'flowtype/vim-flow', {
 NeoBundle 'tpope/vim-fugitive'
 
 " Autocomplete
-NeoBundle 'neoclide/coc.nvim', 'release'
+" NeoBundle 'neoclide/coc.nvim', 'release'
 
 " PHP
 NeoBundle 'php-vim/phpcd.vim'
