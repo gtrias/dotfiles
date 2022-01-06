@@ -31,9 +31,6 @@
 [submodule "sshconf"]
 	path = sshconf
 	url = https://gitlab.com/gtrias/sshconf.git
-[submodule "private-scripts"]
-	path = private-scripts
-	url = https://gitlab.com/gtrias/sshconf.git
 [submodule "awesomewm/awesome-config"]
 	path = awesomewm/awesome-config
 	url = https://github.com/gtrias/awesome-config
