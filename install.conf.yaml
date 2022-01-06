@@ -1,63 +1,64 @@
 - clean: ['~']
 
 - shell:
-    - [git submodule update --init --recursive, Installing submodules]
-    - [exec fonts/fonts/install.sh, Installing Powerline Fonts]
-    - [exec scripts/gitsemver.sh]
-    #- [exec scripts/compile-vim-with-lua.sh/vim74_lua]
+  - [git submodule update --init --recursive, Installing submodules]
+    # - [exec fonts/fonts/install.sh, Installing Powerline Fonts]
 
 - link:
-    ~/.ssh : sshconf/
-    ~/.gitconfig : git/gitconfig
-    ~/.gitignore_global: git/gitignore_global
-    ~/.vimrc: vim/vimrc
-    ~/.config/nvim/init.vim: vim/init.vim
-    ~/.vim/custom: 
+  ~/.gitconfig : git/gitconfig
+  ~/.ssh : sshconf/
+  ~/.gitignore_global: git/gitignore_global
+  ~/.vimrc: vim/vimrc
+  ~/.config/nvim:
+      path: nvim/
       create: true
       force: true
-      path: vim/custom/
-    ~/.profile: environment/profile
-    ~/.alias.common.sh: shells-common/alias.common.sh
-    ~/.zshrc: zsh/zshrc
-    ~/.bash_it: bash/bash-it
-    ~/.bashrc: bash/bashrc
-    ~/.config/i3:
-      create: true
-      force: true
-      path: i3
-    ~/.config/polybar:
-      create: true
-      force: true
-      path: polybar
-    ~/.config/Code/User: vscode
-    ~/.git-semver/config:
-        force: true
-        create: true
-        path: gitsemverconf/config
-    ~/.vim/bundle/neobundle.vim:
-        force: true
-        create: true
-        path: vim/neobundle.vim
-    ~/bin:
-        force: true
-        create: true
-        path: bin/
-    ~/.config/awesome:
-        create: true
-        force: true
-        # path: awesomewm/awesome-copycats/
-        # path: awesomewm/powerarrow/
-        path: awesomewm/awesome-config/
-        # awesomewm/awesome-copycats/rc.lua: awesomewm/rc.lua
-        # awesomewm/awesome-copycats/custom-rc.lua: awesomewm/custom-rc.lua
+  ~/.vim/custom:
+    create: true
+    force: true
+    path: vim/custom/
+  ~/.profile: environment/profile
+  ~/.alias.common.sh: shells-common/alias.common.sh
+  ~/.zshrc: zsh/zshrc
+  ~/.bash_it: bash/bash-it
+  ~/.bashrc: bash/bashrc
+  ~/.config/i3:
+    create: true
+    force: true
+    path: i3
+  ~/.config/polybar:
+    create: true
+    force: true
+    path: polybar
+  ~/.config/Code/User: vscode
+  ~/.git-semver/config:
+    force: true
+    create: true
+    path: gitsemverconf/config
+  ~/.vim/bundle/neobundle.vim:
+    force: true
+    create: true
+    path: vim/neobundle.vim
+  ~/bin:
+    force: true
+    create: true
+    path: bin/
+  ~/.config/awesome:
+    create: true
+    force: true
+      # path: awesomewm/awesome-copycats/
+      # path: awesomewm/powerarrow/
+    path: awesomewm/awesome-config/
+      # awesomewm/awesome-copycats/rc.lua: awesomewm/rc.lua
+      # awesomewm/awesome-copycats/custom-rc.lua: awesomewm/custom-rc.lua
     ~/.config/mc:
-        create: true
-        force: true
-        path: mc/
+      create: true
+      force: true
+      path: mc/
     ~/.gemrc: ruby/gemrc
 
 - shell:
-    # - [exec ~/.bash_it/install.sh --none, Installing bash-it]
-    - [chmod 600 ~/.ssh/*, Fixing .ssh permissions]
-    - [mkdir -p ~/.vim/.vimundo, Creating persistent undo folder]
-    - [mkdir -p ~/.vim/sessions, Creating persistent sessions folder]
+  # - [exec ~/.bash_it/install.sh --none, Installing bash-it]
+  - [chmod 600 ~/.ssh/*, Fixing .ssh permissions]
+  - [mkdir -p ~/.vim/.vimundo, Creating persistent undo folder]
+  - [mkdir -p ~/.vim/sessions, Creating persistent sessions folder]
