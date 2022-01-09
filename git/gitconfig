@@ -36,6 +36,7 @@
 
 [init]
 	templatedir = ~/dotfiles/git/gittemplate
+	defaultBranch = main
 
 [color]
 	ui = true
