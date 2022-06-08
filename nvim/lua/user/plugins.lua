@@ -46,19 +46,15 @@ return packer.startup(function(use)
   use "nvim-lua/plenary.nvim" -- Useful lua functions used ny lots of plugins
 
   -- nerdtree replacement
-  use {
-    'kyazdani42/nvim-tree.lua',
-    requires = {
-      'kyazdani42/nvim-web-devicons', -- optional, for file icon
-    },
-    config = function() require'nvim-tree'.setup {} end
-  }
+  use "preservim/nerdtree"
 
   -- statusline
   use {
     'nvim-lualine/lualine.nvim',
     requires = { 'kyazdani42/nvim-web-devicons', opt = true }
   }
+  use "tpope/vim-endwise" -- Wisely add "end" in ruby, endfunction/endif/more in vim script, etc
+  use "tpope/vim-unimpaired" -- Pairs of handy mappings
 
   -- nvim theme
   use({
@@ -105,7 +101,26 @@ return packer.startup(function(use)
         -- refer to the configuration section below
       }
     end
+
+  -- Error, diagnostics display
+  use { "folke/trouble.nvim", requires = "kyazdani42/nvim-web-devicons" }
+
+  -- A Vim plugin for Prettier
+  use {
+    "prettier/vim-prettier",
+    run = "yarn install",
+    ft = {
+      "javascript",
+      "typescript",
+      "css",
+      "scss",
+      "graphql",
+      "markdown",
+      "html"
+    }
   }
+
+  use { "rcarriga/vim-ultest", requires = {"vim-test/vim-test"}, run = ":UpdateRemotePlugins" }
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
