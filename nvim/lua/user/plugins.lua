@@ -101,6 +101,7 @@ return packer.startup(function(use)
         -- refer to the configuration section below
       }
     end
+  }
 
   -- Error, diagnostics display
   use { "folke/trouble.nvim", requires = "kyazdani42/nvim-web-devicons" }
