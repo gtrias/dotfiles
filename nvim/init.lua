@@ -1,11 +1,7 @@
-require "user.options"
-require "user.keymaps"
-require "user.plugins"
-require "user.colorscheme"
-require "user.lualine"
-require "user.cmp"
-require "user.lsp"
-require "user.telescope"
-require "user.treesitter"
-require "user.trouble"
-require "user.vimtest"
+global = {}
+
+require("keymappings")
+require("autocommands")
+require("plugins")
+require("settings")
+require("lsp")
