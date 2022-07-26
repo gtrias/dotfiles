@@ -54,6 +54,14 @@ return require("packer").startup(function(use)
 	})
   use "williamboman/nvim-lsp-installer" -- simple to use language server installer
 
+  -- Dynamic project configuration
+  use ({
+    "windwp/nvim-projectconfig", 
+    config = function ()
+      require('plugins/projectconfig')
+    end
+  })
+
 	-- Illuminate
 	use({
 		"RRethy/vim-illuminate",
