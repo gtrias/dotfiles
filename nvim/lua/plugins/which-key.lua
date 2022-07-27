@@ -53,6 +53,9 @@ vim.keymap.set("n", "<Leader>f", ":NvimTreeFindFile<CR>", { silent = true })
 -- No Highlights
 vim.keymap.set("n", "<Leader>h", ":let @/=''<CR>", { silent = true })
 
+-- Fast fuzzy find
+vim.keymap.set("n", "<Leader><Leader>", "<cmd>FzfLua git_files<cr>", { silent = true })
+
 local mappings = {
 	n = "NerdTree",
 	f = "Find File",

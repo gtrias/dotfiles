@@ -17,7 +17,7 @@ local completion = null_ls.builtins.completion
 local null_ls_sources = {}
 
 table.insert(null_ls_sources, diagnostics.rubocop.with({
-  command = "make srb-rubocop",
+  command = "docker-compose up -d backend mysql && docker-compose exec backend bundle exec rubocop",
   timeout = 30000
 }))
 
