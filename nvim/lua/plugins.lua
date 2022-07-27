@@ -221,6 +221,12 @@ return require("packer").startup(function(use)
 			require("plugins/tmux-navigator")
 		end,
 	})
+	use({
+    "cappyzawa/trim.nvim",
+		config = function()
+			require("trim").setup()
+		end,
+  })
 
 	-- Automatically set up your configuration after cloning packer.nvim
 	-- Put this at the end after all plugins
