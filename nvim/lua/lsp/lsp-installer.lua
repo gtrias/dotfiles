@@ -25,22 +25,22 @@ end)
 local installable_servers = {}
 
 if vim.fn.executable("node") == 1 then
-  table.insert(installable_servers, 'bashls')
-  table.insert(installable_servers, 'cssls')
-  table.insert(installable_servers, 'bashls')
-  table.insert(installable_servers, 'html')
-  table.insert(installable_servers, 'jsonls')
-  table.insert(installable_servers, 'yamlls')
-  table.insert(installable_servers, 'tailwindcss')
-  table.insert(installable_servers, 'tsserver')
+  -- table.insert(installable_servers, 'bashls')
+  -- table.insert(installable_servers, 'cssls')
+  -- table.insert(installable_servers, 'bashls')
+  -- table.insert(installable_servers, 'html')
+  -- table.insert(installable_servers, 'jsonls')
+  -- table.insert(installable_servers, 'yamlls')
+  -- table.insert(installable_servers, 'tailwindcss')
+  -- table.insert(installable_servers, 'tsserver')
 end
 
 if vim.fn.executable("ruby") == 1 then
-  table.insert(installable_servers, 'sorbet')
+  -- table.insert(installable_servers, 'sorbet')
 end
 
 if vim.fn.executable("rustc") == 1 then
-  table.insert(installable_servers, 'rust_analyzer')
+  -- table.insert(installable_servers, 'rust_analyzer')
 end
 
 for _, name in pairs(installable_servers) do

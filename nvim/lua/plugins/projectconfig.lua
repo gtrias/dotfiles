@@ -4,14 +4,14 @@ if not status then
 end
 
 projectconfig.setup({
-  project_dir = "~/.config/nvim/lua/projects",
+  project_dir = "~/.config/nvim/lua/projects/",
   project_config={
     {
-      path = "/home/genar/src/factorial/backend",
+      path = "factorial/backend",
       config = "~/.config/nvim/lua/projects/factorial-backend.lua"
     },
     {
-      path = "/home/genar/src/factorial/frontend",
+      path = "factorial/frontend",
       config = "~/.config/nvim/lua/projects/factorial-frontend.lua"
     },
     {
@@ -19,4 +19,6 @@ projectconfig.setup({
       config = "~/.config/nvim/lua/projects/default.lua"
     },
   },
+  silent = false,
+  autocmd = true
 })

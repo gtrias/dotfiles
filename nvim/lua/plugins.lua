@@ -56,11 +56,9 @@ return require("packer").startup(function(use)
 
   -- Dynamic project configuration
   use ({
-    "windwp/nvim-projectconfig",
-    config = function ()
-      require('plugins/projectconfig')
-    end
+    "windwp/nvim-projectconfig"
   })
+  use('lspcontainers/lspcontainers.nvim')
 
   -- Illuminate
   use({
