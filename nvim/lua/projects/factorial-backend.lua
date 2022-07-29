@@ -18,6 +18,20 @@ require'lspconfig'.solargraph.setup {
     }
 }
 
+require'lspconfig'.sorbet.setup {
+  cmd = {
+      'docker-compose',
+      'exec',
+      'backend',
+      'bundle',
+      'exec',
+      'srb',
+      'tc',
+      '--lsp',
+      '--disable-watchman'
+    }
+}
+
 local status_null, null_ls = pcall(require, "null-ls")
 if not status_null then
   return
