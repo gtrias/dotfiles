@@ -65,3 +65,7 @@ cmd("set wildignore+=*.min.js,**/node_modules/**,**/images/**")
 cmd("set wildignore+=**/assets/**/original/**,**/assets/**/thumb/**,**/assets/**/small/**")
 cmd("set wildignore+=tmp,public,vendor/bundle/*,vendor/cache/*,test/fixtures/*,vendor/gems/*,spec/cov,a/*")
 cmd("set wildignore+=sorbet/*")
+
+cmd([[
+  autocmd BufEnter * lcd %:p:h
+]])
