@@ -42,10 +42,10 @@ end
 local diagnostics = null_ls.builtins.diagnostics
 local null_ls_sources = {}
 
--- table.insert(null_ls_sources, diagnostics.rubocop.with({
-  -- command = "docker-compose -f ../docker-compose.yml exec backend bundle exec rubocop",
-  -- timeout = 30000
--- }))
+table.insert(null_ls_sources, diagnostics.rubocop.with({
+  command = "docker-compose exec backend bundle exec rubocop",
+  timeout = 30000
+}))
 
 -- table.insert(null_ls_sources, diagnostics.shellcheck.with({
   -- command = "make shellcheck",
