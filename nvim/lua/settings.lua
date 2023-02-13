@@ -66,6 +66,7 @@ cmd("set wildignore+=**/assets/**/original/**,**/assets/**/thumb/**,**/assets/**
 cmd("set wildignore+=tmp,public,vendor/bundle/*,vendor/cache/*,test/fixtures/*,vendor/gems/*,spec/cov,a/*")
 cmd("set wildignore+=sorbet/*")
 
-cmd([[
-  autocmd BufEnter * lcd %:p:h
-]])
+-- ALERT very dangerous with nvim-projectconfig
+-- cmd([[
+  -- autocmd BufEnter * lcd %:p:h
+-- ]])

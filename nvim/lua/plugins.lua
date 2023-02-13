@@ -41,6 +41,15 @@ packer.init({
 return require("packer").startup(function(use)
   use({ "wbthomason/packer.nvim" })
 
+  -- Color
+   use({
+     "catppuccin/nvim",
+     as = "catppuccin",
+     config = function()
+       require("plugins/catppuccin")
+     end,
+   })
+
   -- Need to load first
   use({ "lewis6991/impatient.nvim" })
   use({ "nathom/filetype.nvim" })
