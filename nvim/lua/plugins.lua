@@ -61,7 +61,8 @@ return require("packer").startup(function(use)
   use({
     "neovim/nvim-lspconfig", -- A collection of common configurations for Neovim's built-in language server client.
   })
-  use "williamboman/nvim-lsp-installer" -- simple to use language server installer
+  use { "williamboman/mason.nvim" }
+  use { "williamboman/mason-lspconfig.nvim" }
 
   -- Dynamic project configuration
   use ({
