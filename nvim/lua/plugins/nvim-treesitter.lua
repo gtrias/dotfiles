@@ -14,6 +14,8 @@ require("nvim-treesitter.configs").setup({
 		"scss",
 		"toml",
 		"typescript",
+		"terraform",
+		"hcl",
 		"yaml",
 	},
 	highlight = {

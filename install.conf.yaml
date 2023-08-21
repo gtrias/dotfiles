@@ -5,8 +5,12 @@
     # - [exec fonts/fonts/install.sh, Installing Powerline Fonts]
 
 - link:
-  ~/.gitconfig : git/gitconfig
-  ~/.ssh : sshconf/
+  ~/.gitconfig:
+    path: git/gitconfig
+    relink: true
+  ~/.ssh:
+    path: sshconf/
+    relink: true
   ~/.gitignore_global: git/gitignore_global
   ~/.vimrc: vim/vimrc
   ~/.config/nvim:

@@ -57,6 +57,16 @@ local function lsp_highlight_document(client)
       false
     )
   end
+
+  vim.api.nvim_create_autocmd('FileType', {
+    pattern = 'sh|make',
+    callback = function()
+      vim.lsp.start({
+        name = 'bash-language-server',
+        cmd = { 'bash-language-server', 'start' },
+      })
+    end,
+  })
 end
 
 local function lsp_keymaps(bufnr)
@@ -98,6 +108,6 @@ if not status_ok then
   return
 end
 
-M.capabilities = cmp_nvim_lsp.update_capabilities(capabilities)
+M.capabilities = cmp_nvim_lsp.default_capabilities(capabilities)
 
 return M
