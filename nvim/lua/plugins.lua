@@ -54,6 +54,7 @@ return require("packer").startup(function(use)
   })
   use { "williamboman/mason.nvim" }
   use { "williamboman/mason-lspconfig.nvim" }
+  use { 'mhartington/formatter.nvim' }
 
   -- Dynamic project configuration
   use ({
@@ -144,7 +145,6 @@ return require("packer").startup(function(use)
   use({
     "lukas-reineke/indent-blankline.nvim",
     config = function()
-      require("plugins/indent-blankline")
     end,
   })
 
