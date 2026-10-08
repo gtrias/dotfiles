@@ -42,7 +42,7 @@ reference for what a clean non-Nix tree looks like; not followed).
 | Terminal emulator   | GNOME Terminal                                                |
 | Editor              | Neovim — port existing `init.lua` (sub-project 3)             |
 | Theme               | Catppuccin, unified across GNOME / nvim / terminal (full pass = sub-project 4) |
-| Dev toolchains (VM) | Node.js only, on day one (sub-project 3); others added later |
+| Dev toolchains (VM) | None on day one; Node.js added in sub-project 3, others later |
 | User                | `genar`                                                       |
 | Project name        | `nixos-config`                                                |
 
@@ -61,6 +61,7 @@ reference for what a clean non-Nix tree looks like; not followed).
 
 Shared-base + per-host-override: every host imports the same `modules/` + `home/`;
 each `hosts/<machine>/` adds only its differences (hostname, display, hardware).
+Change a shared setting once and it is identical on all machines.
 
 ```
 nixos-config/
@@ -212,7 +213,9 @@ Minimal on day one; grows in sub-projects 3–4:
 
 ## 5. Prerequisites (one-time, on the kelymaster host)
 
-The box is CachyOS (Arch-based), 16 cores / 31 GB RAM — sufficient.
+The box is CachyOS (Arch-based), 16 cores / 31 GB RAM — sufficient. Both `nix`
+and `qemu`/OVMF are **not yet installed** on this box (checked), so day one
+starts with:
 
 - `sudo pacman -S qemu edk2-ovmf` (+ optionally `virt-manager`)
 - Nix 2.28+ in **single-user** mode via the official installer
@@ -232,7 +235,7 @@ The repo becomes a clean Nix tree; pre-Nix content is **archived, not deleted**:
 3. Add the new skeleton (§4): `flake.nix`, `hosts/vm/{default,overlays}.nix`,
    `home/genar.nix`, empty `modules/{nixos,home}/` + `lib/` spines, rewritten
    `README.md`
-4. New `.gitignore`: `result`, `result-*`, `#*#`, `.*.suspended`, `legacy/sshconf/`
+4. New `.gitignore`: `result`, `result-*`, `#*#`, `.*.suspended`
 
 `legacy/nvim/` and `legacy/zsh/zshrc` are reference material for sub-project 3's
 port. No sensitive material moves: this repo holds **no private keys** (they live
