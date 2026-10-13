@@ -11,6 +11,11 @@
 
   programs.git.enable = true;
 
+  programs.fzf = {
+    enable = true;
+    defaultCommand = "fd --type file --hidden --follow --exclude .git";
+  };
+
   programs.gnome-terminal = {
     enable = true;
     # Profile keys MUST be UUIDs and exactly one must be default = true
@@ -25,7 +30,14 @@
   # Zen Browser (youwen5/zen-browser-flake): prebuilt upstream binary wrapped
   # via wrapFirefox, auto-updated upstream. Shared home => every host that
   # imports this config gets it (vm today; kelymaster/slimbook in sub-project 5).
-  home.packages = [
+  #
+  # Terminal QoL: fast search/list (ripgrep + fd), JSON (jq), highlighted
+  # output (bat), and a TUI resource monitor (btop). Fzf is wired via
+  # programs.fzf above so it installs the binary AND the shell keybindings.
+  home.packages = with pkgs; [
+    ripgrep fd jq bat btop
+    jetbrains-mono
+    noto-fonts-color-emoji
     inputs.zen-browser.packages.${pkgs.stdenv.hostPlatform.system}.default
   ];
 
