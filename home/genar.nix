@@ -16,6 +16,48 @@
     defaultCommand = "fd --type file --hidden --follow --exclude .git";
   };
 
+  programs.neovim = {
+    enable = true;
+    defaultEditor = true;
+    # Built-in Python/Ruby providers (home-manager flipped these defaults to
+    # false in this rev; LazyVim's LSPs + several plugins need them).
+    withPython3 = true;
+    withRuby = true;
+    # Self-contained LazyVim bootstrap: on first `nvim` launch it clones
+    # lazy.nvim + installs the full LazyVim plugin set under
+    # ~/.local/share/nvim/lazy; on later launches it just loads them.
+    # Catppuccin is LazyVim's default colorscheme. (Embedded as initLua so no
+    # separate tracked file is needed by the flake.)
+    initLua = ''
+      local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
+      if not (vim.uv or vim.loop).fs_stat(lazypath) then
+        local lazyrepo = "https://github.com/folke/lazy.nvim.git"
+        local out = vim.fn.system({ "git", "clone", "--filter=blob:none", "--branch=stable", lazyrepo, lazypath })
+        if vim.v.shell_error ~= 0 then
+          vim.api.nvim_echo({ { "Failed to clone lazy.nvim:\n", "ErrorMsg" }, { out, "WarningMsg" } }, true, {})
+          vim.fn.getchar()
+          os.exit(1)
+        end
+      end
+      vim.opt.rtp:prepend(lazypath)
+      vim.g.mapleader = " "
+      vim.g.maplocalleader = " "
+      require("lazy").setup({
+        spec = {
+          { "LazyVim/LazyVim", import = "lazyvim.plugins" },
+        },
+        defaults = { lazy = false, version = false },
+        install = { colorscheme = { "tokyonight", "habamax" } },
+        checker = { enabled = true, notify = false },
+        performance = {
+          rtp = {
+            disabled_plugins = { "gzip", "tarPlugin", "tohtml", "tutor", "zipPlugin" },
+          },
+        },
+      })
+    '';
+  };
+
   programs.gnome-terminal = {
     enable = true;
     # Profile keys MUST be UUIDs and exactly one must be default = true
@@ -42,6 +84,7 @@
   ];
 
   # Later sub-projects:
-  #   3 — Neovim (port legacy/nvim/init.lua) + Node.js
-  #   4 — Catppuccin palette for gnome-terminal (extraConfig)
+  #   3 — Neovim: done (LazyVim via programs.neovim.initLua above). Optional:
+  #        withNodeJs for JS/TS LSPs (lazy-dev/mason can also install them).
+  #   4 — Catppuccin palette for gnome-terminal (extraConfig).
 }
