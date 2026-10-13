@@ -1,1 +1,19 @@
-git-semver
+# Nix build artifacts
+result
+result-*
+#*#
+.*.suspended
+.direnv
+
+# Vendored framework checkouts kept on disk under legacy/ but not committed
+legacy/dotbot/
+legacy/fonts/
+legacy/zsh/oh-my-zsh/
+legacy/zsh/prezto/
+legacy/bash/bash-it/
+legacy/vim/neobundle.vim/
+legacy/vim/snippets/
+legacy/sshconf/
+legacy/awesomewm/powerarrow/
+legacy/awesomewm/awesome-config/
+legacy/scripts/compile-vim-with-lua.sh/

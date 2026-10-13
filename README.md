@@ -1,51 +1,54 @@
-Dotfiles Template
-=================
+# nixos-config
 
-This is a template repository for bootstraping your dotfiles with [Dotbot][dotbot].
+My personal NixOS system — one configuration shared across my machines via a
+[Nix flake](https://flake.nix) + [home-manager](https://github.com/nix-community/home-manager).
 
-To get started, you can [fork][fork] this repository (and probably delete this
-README and rename your version to something like just `dotfiles`).
+| Host         | What it is                          | Status |
+|--------------|-------------------------------------|--------|
+| `vm`         | QEMU iteration sandbox              | done (sub-project 1) |
+| `kelymaster` | this box — native install           | sub-project 5/6 |
+| `kelycube`   | real machine                        | sub-project 5 |
+| `slimbook`   | laptop                              | sub-project 5 |
 
-In general, you should be using symbolic links for everything, and using git
-submodules whenever possible.
+Shared base (`modules/`, `home/`) + per-host overrides (`hosts/<machine>/`).
+Change a shared setting once and it applies to every machine.
 
-To keep submodules at their proper versions, you could include something like
-`git submodule update --init --recursive` in your `install.conf.yaml`.
+## Requirements
 
-To upgrade your submodules to their latest versions, you could periodically run
-`git submodule update --init --remote`.
+- [Nix](https://nixos.org/nix/) 2.28+ with flakes enabled
+  (`experimental-features = nix-command flakes` in `~/.config/nix/nix.conf`)
+- A display (the VM opens a GTK window)
 
-Inspiration
------------
+## Run the VM
 
-If you're looking for inspiration for how to structure your dotfiles or what
-kinds of things you can include, you could take a look at some repos using
-Dotbot.
+```bash
+nix run .#default
+```
 
-* [anishathalye's dotfiles][anishathalye_dotfiles]
-* [csivanich's dotfiles][csivanich_dotfiles]
-* [m45t3r's dotfiles][m45t3r_dotfiles]
-* [alexwh's dotfiles][alexwh_dotfiles]
-* [azd325's dotfiles][azd325_dotfiles]
-* [bluekeys' dotfiles][bluekeys_dotfiles]
+First run builds the VM image (a long, one-time download from the
+`nixos-unstable` cache). After that, `nix build` is incremental.
 
-If you're using Dotbot and you'd like to include a link to your dotfiles here
-as an inspiration to others, please submit a pull request.
+Rebuild after editing, then re-run:
 
-License
--------
+```bash
+nix build .#nixosConfigurations.vm.config.system.build.vm
+nix run .#default
+```
 
-This software is hereby released into the public domain. That means you can do
-whatever you want with it without restriction. See `LICENSE.md` for details.
+Evaluate everything without building:
 
-That being said, I would appreciate it if you could maintain a link back to
-Dotbot (or this repository) to help other people discover Dotbot.
+```bash
+nix flake check
+```
 
-[dotbot]: https://github.com/anishathalye/dotbot
-[fork]: https://github.com/anishathalye/dotfiles_template/fork
-[anishathalye_dotfiles]: https://github.com/anishathalye/dotfiles
-[csivanich_dotfiles]: https://github.com/csivanich/dotfiles
-[m45t3r_dotfiles]: https://github.com/m45t3r/dotfiles
-[alexwh_dotfiles]: https://github.com/alexwh/dotfiles
-[azd325_dotfiles]: https://github.com/Azd325/dotfiles
-[bluekeys_dotfiles]: https://github.com/bluekeys/.dotfiles
+## Roadmap
+
+1. **VM scaffold** (this) — flake + `hosts/vm` booting GNOME as `genar`
+2. Core system — users, networking, nix config, fonts; populate `modules/nixos`;
+   in-VM `nixos-rebuild` (VM flake-imports this repo)
+3. home-manager stack — bash hardening, Neovim (port of `legacy/nvim`), Node.js
+4. Theming pass — Catppuccin across GNOME / nvim / terminal
+5. Real hosts — `hosts/{kelymaster,kelycube,slimbook}` + hardware/GPU
+6. Installer — disko + bootable USB for the native install
+
+`legacy/` holds the pre-Nix configuration (archived, for reference while porting).
