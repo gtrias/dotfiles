@@ -13,7 +13,7 @@ legacy/zsh/prezto/
 legacy/bash/bash-it/
 legacy/vim/neobundle.vim/
 legacy/vim/snippets/
-legacy/sshconf/
+sshconf/
 legacy/awesomewm/powerarrow/
 legacy/awesomewm/awesome-config/
 legacy/scripts/compile-vim-with-lua.sh/
