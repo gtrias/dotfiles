@@ -5,6 +5,9 @@ result-*
 .*.suspended
 .direnv
 
+# QEMU VM disk images created by `nix run .#default` (run from the repo root)
+*.qcow2
+
 # Vendored framework checkouts kept on disk under legacy/ but not committed
 legacy/dotbot/
 legacy/fonts/
