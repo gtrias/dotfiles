@@ -1,4 +1,4 @@
-{ config, pkgs, lib, ... }:
+{ config, pkgs, lib, inputs, ... }:
 {
   home.username = "genar";
   home.homeDirectory = "/home/genar";
@@ -21,6 +21,13 @@
       # Catppuccin palette goes here in sub-project 4.
     };
   };
+
+  # Zen Browser (youwen5/zen-browser-flake): prebuilt upstream binary wrapped
+  # via wrapFirefox, auto-updated upstream. Shared home => every host that
+  # imports this config gets it (vm today; kelymaster/slimbook in sub-project 5).
+  home.packages = [
+    inputs.zen-browser.packages.${pkgs.stdenv.hostPlatform.system}.default
+  ];
 
   # Later sub-projects:
   #   3 — Neovim (port legacy/nvim/init.lua) + Node.js
