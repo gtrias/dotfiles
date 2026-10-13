@@ -27,12 +27,12 @@
   boot.kernelModules = [ "uinput" "evdev" "virtio_gpu" ];
 
   # Display: GNOME desktop + gdm + auto-login (replaces knoopx's greetd + niri-session)
-  services.xdg-desktop.gnome.enable = true;
-  services.desktopManager.gnome.enable = true;
-  services.desktopManager.gnome.autoLogin = {
+  services.displayManager.gdm.enable = true;
+  services.displayManager.autoLogin = {
     enable = true;
     user = "genar";
   };
+  services.desktopManager.gnome.enable = true;
 
   users.users.genar = {
     isNormalUser = true;
